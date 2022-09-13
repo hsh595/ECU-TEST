@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HISTORY-SETTINGS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<RECENT-TCFFILES>
+		<ELEMENT xsi:type="string">Configurations\SW_Ver_1.tcf</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\MyConfigurations\Simulink.tcf</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\Simulink.tcf</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\MyConfigurations\Vector_xl_api.tcf</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\MyConfigurations\Veristand.tcf</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\Veristand.tcf</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\CANape.tcf</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\CANoe.tcf</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\MyConfigurations\Labview.tcf</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\Labview.tcf</ELEMENT>
+	</RECENT-TCFFILES>
+	<LAST-TCF-SAVED xsi:type="boolean">True</LAST-TCF-SAVED>
+	<RECENT-TBC-FILES>
+		<ELEMENT xsi:type="string">Configurations\Testlab_HiL.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\MyConfigurations\Simulink.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\Simulink.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\MyConfigurations\Vector_xl_api.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\MyConfigurations\Veristand.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\Veristand.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\CANape.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\MyConfigurations\CANoe.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\MyConfigurations\Labview.tbc</ELEMENT>
+	</RECENT-TBC-FILES>
+	<LAST-TBC-SAVED xsi:type="boolean">True</LAST-TBC-SAVED>
+	<RECENT-PROJECTS-PACKAGES>
+		<ELEMENT xsi:type="string">Packages\MyPackages\Test_BasicDrive.pkg</ELEMENT>
+		<ELEMENT xsi:type="string">C:\Users\panos\Documents\WeChat Files\wxid_ia0fn87dv3jk22\FileStorage\File\2022-09\跟停静止目标车辆(2).trf</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\MyConfigurations\Veristand.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\MyConfigurations\Vector_xl_api.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\MyConfigurations\Simulink.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\MyConfigurations\Labview.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\MyConfigurations\CANoe.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\MyConfigurations\CANape.tbc</ELEMENT>
+		<ELEMENT xsi:type="string">Packages\Package 5.pkg</ELEMENT>
+		<ELEMENT xsi:type="string">Packages\_Results\50_TestCaseDevelopment\BasicDrive.pkg</ELEMENT>
+	</RECENT-PROJECTS-PACKAGES>
+	<RECENT-SEARCH-REQUESTS/>
+</HISTORY-SETTINGS>

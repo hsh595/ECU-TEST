@@ -1,0 +1,80 @@
+
+
+= 08.09.2022 16:04:25 (UTC +8:00) === ECU-TEST 2021.2.113427+6b6fb661af22 113427+6b6fb661af22 (2021/06/28 11:25:11) (64bit) ===
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2022.4
+         - valid until: 31-dec-2022
+         - licensed for: TURING
+         - Server: 192.168.1.17
+
+
+2022-09-08 16:04:25.072 15856 ManagedWorker-4*PE.Run() INFO:
+                        Start package 'main.pkg' with test case execution with sequential analysis job execution
+2022-09-08 16:04:25.082 15856 ManagedWorker-4*PE.Run() INFO:
+                        Test case "main" started
+2022-09-08 16:04:25.086 15856 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2022-09-08 16:04:25.100 15856 ManagedWorker-4*PE.Run() INFO:
+                        System time mode activated
+2022-09-08 16:04:25.110 15856 ManagedWorker-4*PE.Run() ERROR:
+                        Test step 4(Read from inbox): "Waiting for next message not allowed for disconnected inbox"
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\main.pkg"#4
+2022-09-08 16:04:25.112 15856 ManagedWorker-4*PE.Run() ERROR:
+                        tts.testExecution.engine.TestEngine.ExecuteTestStep: Waiting for next message not allowed for disconnected inbox
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\main.pkg"#4
+2022-09-08 16:04:25.120 15856 ManagedWorker-4*PE.Run() ERROR:
+                        Test step 4(Read from inbox): "Waiting for next message not allowed for disconnected inbox"
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\main.pkg"#4
+2022-09-08 16:04:25.121 15856 ManagedWorker-4*PE.Run() ERROR:
+                        tts.testExecution.engine.TestEngine.ExecuteTestStep: Waiting for next message not allowed for disconnected inbox
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\main.pkg"#4
+2022-09-08 16:04:25.132 15856 ManagedWorker-4*PE.Run() ERROR:
+                        Test step 4(Read from inbox): "Waiting for next message not allowed for disconnected inbox"
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\main.pkg"#4
+2022-09-08 16:04:25.134 15856 ManagedWorker-4*PE.Run() ERROR:
+                        tts.testExecution.engine.TestEngine.ExecuteTestStep: Waiting for next message not allowed for disconnected inbox
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\main.pkg"#4
+2022-09-08 16:04:25.142 15856 ManagedWorker-4*PE.Run() ERROR:
+                        Test step 4(Read from inbox): "Waiting for next message not allowed for disconnected inbox"
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\main.pkg"#4
+2022-09-08 16:04:25.143 15856 ManagedWorker-4*PE.Run() ERROR:
+                        tts.testExecution.engine.TestEngine.ExecuteTestStep: Waiting for next message not allowed for disconnected inbox
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\main.pkg"#4
+2022-09-08 16:04:25.153 15856 ManagedWorker-4*PE.Run() ERROR:
+                        Test step 4(Read from inbox): "Waiting for next message not allowed for disconnected inbox"
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\main.pkg"#4
+2022-09-08 16:04:25.155 15856 ManagedWorker-4*PE.Run() ERROR:
+                        tts.testExecution.engine.TestEngine.ExecuteTestStep: Waiting for next message not allowed for disconnected inbox
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\main.pkg"#4
+2022-09-08 16:04:25.164 15856 ManagedWorker-4*PE.Run() ERROR:
+                        Test step 4(Read from inbox): "Waiting for next message not allowed for disconnected inbox"
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\main.pkg"#4
+2022-09-08 16:04:25.165 15856 ManagedWorker-4*PE.Run() ERROR:
+                        tts.testExecution.engine.TestEngine.ExecuteTestStep: Waiting for next message not allowed for disconnected inbox
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\main.pkg"#4
+2022-09-08 16:04:25.174 15856 ManagedWorker-4*PE.Run() ERROR:
+                        Test step 4(Read from inbox): "Waiting for next message not allowed for disconnected inbox"
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\main.pkg"#4
+2022-09-08 16:04:25.174 15856 ManagedWorker-4*PE.Run() ERROR:
+                        tts.testExecution.engine.TestEngine.ExecuteTestStep: Waiting for next message not allowed for disconnected inbox
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\main.pkg"#4
+2022-09-08 16:04:25.183 15856 ManagedWorker-4*PE.Run() ERROR:
+                        Test step 4(Read from inbox): "Waiting for next message not allowed for disconnected inbox"
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\main.pkg"#4
+2022-09-08 16:04:25.185 15856 ManagedWorker-4*PE.Run() ERROR:
+                        tts.testExecution.engine.TestEngine.ExecuteTestStep: Waiting for next message not allowed for disconnected inbox
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\main.pkg"#4
+2022-09-08 16:04:25.194 15856 ManagedWorker-4*PE.Run() ERROR:
+                        Test step 4(Read from inbox): "Waiting for next message not allowed for disconnected inbox"
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\main.pkg"#4
+2022-09-08 16:04:25.195 15856 ManagedWorker-4*PE.Run() ERROR:
+                        tts.testExecution.engine.TestEngine.ExecuteTestStep: Waiting for next message not allowed for disconnected inbox
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\main.pkg"#4
+2022-09-08 16:04:25.202 15856 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2022-09-08 16:04:25.204 15856 ManagedWorker-4*PE.Run() INFO:
+                        Test case "main" completed

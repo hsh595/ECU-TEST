@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2021.2.113427+6b6fb661af22" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">inbox_sub</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE xsi:type="inbox">
+				<SIZE xsi:type="integer">50</SIZE>
+				<DISCARD-OLDEST xsi:type="boolean">False</DISCARD-OLDEST>
+				<OVERFLOW-WARNING xsi:type="boolean">False</OVERFLOW-WARNING>
+				<DEFAULT-FETCH-TIMEOUT xsi:type="integer">20000</DEFAULT-FETCH-TIMEOUT>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" out="true" xsi:type="variable">
+			<NAME xsi:type="string">outbox_sub</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE xsi:type="outbox">
+				<DISCARD-IF-DISCONNECTED xsi:type="boolean">False</DISCARD-IF-DISCONNECTED>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">a</NAME>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">new_inbox</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace"/>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="3" id="633aa62e-fcda-47c0-8c41-f6c42cffe8b5" name="TsInboxFetch" xsi:type="utility-179c75a3-4fef-11dc-8fdd-0013728784ee">
+			<COMMENT-I18N xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">必须另存为一个值，不能用inbox这种类型直接做判断</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+			</COMMENT-I18N>
+			<VARIABLE-REFS>
+				<VARIABLE-NAME dkey="inbox">
+					<DVALUE xsi:type="string">inbox_sub</DVALUE>
+				</VARIABLE-NAME>
+			</VARIABLE-REFS>
+			<SAVE-IN xsi:type="varBaseExpression">
+				<NAME xsi:type="string">new_inbox</NAME>
+			</SAVE-IN>
+		</TESTSTEP>
+		<TESTSTEP id="676636ef-8bdd-4d8a-acc0-95c9336d0f1c" name="TsIfThenElse" xsi:type="utility-3609c41e-4fef-11dc-899a-0013728784ee">
+			<CONDITION xsi:type="compareOpBaseExpression">
+				<NAME xsi:type="string">==</NAME>
+				<FIRST-COMPONENT xsi:type="varBaseExpression">
+					<NAME xsi:type="string">new_inbox</NAME>
+				</FIRST-COMPONENT>
+				<SECOND-COMPONENT format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">3</VALUE>
+				</SECOND-COMPONENT>
+			</CONDITION>
+			<THEN id="eecf3b86-7503-427d-81de-76f7eb40088b" xsi:type="ifThenElseNode">
+				<TESTSTEP format-rev="3" id="daa45e68-8676-43ae-8214-09aca7b2d719" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+					<VARIABLE-REFS>
+						<VARIABLE-NAME dkey="default">
+							<DVALUE xsi:type="string">a</DVALUE>
+						</VARIABLE-NAME>
+					</VARIABLE-REFS>
+					<FORMULA xsi:type="binaryOpBaseExpression">
+						<NAME xsi:type="string">BINARY_ADD</NAME>
+						<FIRST-COMPONENT xsi:type="varBaseExpression">
+							<NAME xsi:type="string">new_inbox</NAME>
+						</FIRST-COMPONENT>
+						<SECOND-COMPONENT format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">2</VALUE>
+						</SECOND-COMPONENT>
+					</FORMULA>
+				</TESTSTEP>
+				<TESTSTEP id="129c0a4d-4ace-4516-9546-da62d835751e" name="TsOutboxPost" xsi:type="utility-179c75a2-4fef-11dc-8fdd-0013728784ee">
+					<VARIABLE-REFS>
+						<VARIABLE-NAME dkey="outbox">
+							<DVALUE xsi:type="string">outbox_sub</DVALUE>
+						</VARIABLE-NAME>
+					</VARIABLE-REFS>
+					<MESSAGE xsi:type="varBaseExpression">
+						<NAME xsi:type="string">a</NAME>
+					</MESSAGE>
+				</TESTSTEP>
+			</THEN>
+			<ELSE id="fbc357ba-9203-419a-80a4-fe4789e7ab7d" xsi:type="ifThenElseNode"/>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>

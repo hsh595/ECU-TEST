@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2021.2.113427+6b6fb661af22" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">result_1</NAME>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace">
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Add 1.vi</ID>
+			<XACCESS xsi:type="XAFunction">
+				<FCT-GROUP-NAME xsi:type="string">VI</FCT-GROUP-NAME>
+				<FCT-MODULE-NAME xsi:type="string"/>
+				<FUNCTION-NAME xsi:type="string">Add 1.vi</FUNCTION-NAME>
+			</XACCESS>
+			<SUB-MAPPING format-rev="1" xsi:type="subMappingSpace">
+				<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+					<ID xsi:type="string"> b</ID>
+					<XACCESS xsi:type="xaFctParameter">
+						<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+						<PARAM-NAME xsi:type="string"> b</PARAM-NAME>
+					</XACCESS>
+				</MAPPING-ITEM>
+				<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+					<ID xsi:type="string">Boolean</ID>
+					<XACCESS xsi:type="xaFctParameter">
+						<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+						<PARAM-NAME xsi:type="string">Boolean</PARAM-NAME>
+					</XACCESS>
+				</MAPPING-ITEM>
+				<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+					<ID xsi:type="string">Slide</ID>
+					<XACCESS xsi:type="xaFctParameter">
+						<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+						<PARAM-NAME xsi:type="string">Slide</PARAM-NAME>
+					</XACCESS>
+				</MAPPING-ITEM>
+				<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+					<ID xsi:type="string">a</ID>
+					<XACCESS xsi:type="xaFctParameter">
+						<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+						<PARAM-NAME xsi:type="string">a</PARAM-NAME>
+					</XACCESS>
+				</MAPPING-ITEM>
+			</SUB-MAPPING>
+		</MAPPING-ITEM>
+	</MAPPING>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="3" id="d04a5a12-963c-4038-b047-42d163fa1fe6" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">设置参数并检查输出</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP format-rev="3" id="d3c62807-984c-4423-a655-f0173a1c0843" xsi:type="tsProceed">
+				<MAPPING-REF xsi:type="string">Add 1.vi</MAPPING-REF>
+				<IN id="acd88ac3-b7b0-4b51-bf57-26e485bf1937" xsi:type="inputOutputNode">
+					<TESTSTEP id="77bce21c-34be-43b4-bbf3-1a522e4cdd5e" xsi:type="tsWrite">
+						<MAPPING-REF xsi:type="string">a</MAPPING-REF>
+						<VALUE xsi:type="expressionValue">
+							<DATA format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</DATA>
+						</VALUE>
+						<METRIC format-rev="1" xsi:type="metricInfo">
+							<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+							<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+						</METRIC>
+					</TESTSTEP>
+					<TESTSTEP id="97f95213-cc7e-494d-9f22-4f445740442c" xsi:type="tsWrite">
+						<MAPPING-REF xsi:type="string"> b</MAPPING-REF>
+						<VALUE xsi:type="expressionValue">
+							<DATA format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">2</VALUE>
+							</DATA>
+						</VALUE>
+						<METRIC format-rev="1" xsi:type="metricInfo">
+							<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+							<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+						</METRIC>
+					</TESTSTEP>
+				</IN>
+				<OUT id="09b149cd-d399-4b2a-b554-485ab92d0d68" xsi:type="inputOutputNode">
+					<TESTSTEP id="85edadb9-c5dc-4233-81b5-f3bff80bfa7c" xsi:type="tsRead">
+						<MAPPING-REF xsi:type="string">Slide</MAPPING-REF>
+						<VARIABLE-REFS>
+							<VARIABLE-NAME dkey="default">
+								<DVALUE xsi:type="string">result_1</DVALUE>
+							</VARIABLE-NAME>
+						</VARIABLE-REFS>
+						<METRIC format-rev="1" xsi:type="metricInfo">
+							<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+							<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+						</METRIC>
+					</TESTSTEP>
+				</OUT>
+			</TESTSTEP>
+			<TESTSTEP id="7b6edab3-dcdf-466c-87da-64f3fddfb69b" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+				<TIME format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">100</VALUE>
+				</TIME>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="299e2771-7c3b-4e73-950d-4006a816f372" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">通过参数控制VI停止运行</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP format-rev="3" id="64478200-a939-43fd-a8b6-e1661dc28479" xsi:type="tsProceed">
+				<MAPPING-REF xsi:type="string">Add 1.vi</MAPPING-REF>
+				<IN id="fecca846-750d-4bfc-886c-ad839b298c2c" xsi:type="inputOutputNode">
+					<TESTSTEP id="a6b15fe4-39e2-4cf1-a0bd-cad582ac4a6f" xsi:type="tsWrite">
+						<MAPPING-REF xsi:type="string">Boolean</MAPPING-REF>
+						<VALUE xsi:type="expressionValue">
+							<DATA format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">1</VALUE>
+							</DATA>
+						</VALUE>
+						<METRIC format-rev="1" xsi:type="metricInfo">
+							<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+							<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+						</METRIC>
+					</TESTSTEP>
+				</IN>
+				<OUT id="21121a3f-9604-4fa5-a194-d31ade019149" xsi:type="inputOutputNode"/>
+			</TESTSTEP>
+			<TESTSTEP id="66047236-5078-44b9-a4c0-f2b0bc932f7b" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+				<TIME format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">100</VALUE>
+				</TIME>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="8dc02d39-4ba3-4ac4-8ef0-4e410960a321" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">通过参数并检查输出2</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP format-rev="3" id="b52a2699-9be0-4414-8213-90e6d58d6f5b" xsi:type="tsProceed">
+				<MAPPING-REF xsi:type="string">Add 1.vi</MAPPING-REF>
+				<IN id="5fb692f1-1abe-4edf-9bcb-1af86345a13e" xsi:type="inputOutputNode">
+					<TESTSTEP id="da27ca97-c930-4a69-a5a2-18da5afcb81e" xsi:type="tsWrite">
+						<MAPPING-REF xsi:type="string">a</MAPPING-REF>
+						<VALUE xsi:type="expressionValue">
+							<DATA xsi:type="varBaseExpression">
+								<NAME xsi:type="string">result_1</NAME>
+							</DATA>
+						</VALUE>
+						<METRIC format-rev="1" xsi:type="metricInfo">
+							<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+							<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+						</METRIC>
+					</TESTSTEP>
+					<TESTSTEP id="6470b0e7-352c-40c7-a906-cdd7fb3c5f71" xsi:type="tsWrite">
+						<MAPPING-REF xsi:type="string"> b</MAPPING-REF>
+						<VALUE xsi:type="expressionValue">
+							<DATA format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">2</VALUE>
+							</DATA>
+						</VALUE>
+						<METRIC format-rev="1" xsi:type="metricInfo">
+							<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+							<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+						</METRIC>
+					</TESTSTEP>
+				</IN>
+				<OUT id="0d53fa19-21e9-4e78-a7fb-05f6a6564580" xsi:type="inputOutputNode">
+					<TESTSTEP id="01535498-bae5-4034-ba32-259d0c95c044" xsi:type="tsRead">
+						<MAPPING-REF xsi:type="string">Slide</MAPPING-REF>
+						<EXPECTATION xsi:type="timelessOption">
+							<EXPRESSION xsi:type="builtNumericExpression">
+								<RELATION xsi:type="string">==</RELATION>
+								<VALUE format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">9</VALUE>
+								</VALUE>
+							</EXPRESSION>
+						</EXPECTATION>
+						<METRIC format-rev="1" xsi:type="metricInfo">
+							<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+							<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+						</METRIC>
+					</TESTSTEP>
+				</OUT>
+			</TESTSTEP>
+			<TESTSTEP id="a5f0dc04-1b29-4744-ab62-25d79da25dcc" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+				<TIME format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">100</VALUE>
+				</TIME>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="744faab8-c7da-4072-9655-9d7470b6be92" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">通过参数控制VI停止运行</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP format-rev="3" id="0c226a86-6dc7-452e-9145-4aa6ce3d3349" xsi:type="tsProceed">
+				<MAPPING-REF xsi:type="string">Add 1.vi</MAPPING-REF>
+				<IN id="2320e6d9-2c89-4b5b-aed0-70973ba93534" xsi:type="inputOutputNode">
+					<TESTSTEP id="dc9f14bc-848f-4fd6-beea-cb0ac2573338" xsi:type="tsWrite">
+						<MAPPING-REF xsi:type="string">Boolean</MAPPING-REF>
+						<VALUE xsi:type="expressionValue">
+							<DATA format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">1</VALUE>
+							</DATA>
+						</VALUE>
+						<METRIC format-rev="1" xsi:type="metricInfo">
+							<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+							<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+						</METRIC>
+					</TESTSTEP>
+				</IN>
+				<OUT id="82d48528-f69b-41b9-8742-ddb1663f935e" xsi:type="inputOutputNode"/>
+			</TESTSTEP>
+			<TESTSTEP id="f5efa836-c2e0-4e74-86d5-dc42eef9f4d4" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+				<TIME format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">100</VALUE>
+				</TIME>
+			</TESTSTEP>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>

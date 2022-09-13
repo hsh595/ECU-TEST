@@ -1,0 +1,71 @@
+
+
+= 08.09.2022 16:13:17 (UTC +8:00) === ECU-TEST 2021.2.113427+6b6fb661af22 113427+6b6fb661af22 (2021/06/28 11:25:11) (64bit) ===
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2022.4
+         - valid until: 31-dec-2022
+         - licensed for: TURING
+         - Server: 192.168.1.17
+
+
+2022-09-08 16:13:17.184 15856 Thread-132*sub ERROR:
+                        Traceback (most recent call last):
+                          File "tts\core\expressions\BaseExpressions.py", line 653, in Evaluate
+                        TypeError: unsupported operand type(s) for +: 'Inbox' and 'int'
+                        
+                        During handling of the above exception, another exception occurred:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 144, in Call
+                          File "tts\core\expressions\BaseExpressions.py", line 662, in Evaluate
+                        tts.core.expressions.BaseExpressions.ExpressionValueError: Operation <INBOX object at 0x1BE2F5DECC0><Inbox> + 10<int> cannot be executed!
+                        
+                        During handling of the above exception, another exception occurred:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 953, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 196, in Run
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 148, in Call
+                        tts.testExecution.testSteps.dataoperations.calculationNG.TsCalculationExec.UserCodeException: Operation <INBOX object at 0x1BE2F5DECC0><Inbox> + 10<int> cannot be executed!
+2022-09-08 16:13:37.194 15856 Thread-132*sub ERROR:
+                        Traceback (most recent call last):
+                          File "tts\core\expressions\BaseExpressions.py", line 653, in Evaluate
+                        TypeError: unsupported operand type(s) for +: 'Inbox' and 'int'
+                        
+                        During handling of the above exception, another exception occurred:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 144, in Call
+                          File "tts\core\expressions\BaseExpressions.py", line 662, in Evaluate
+                        tts.core.expressions.BaseExpressions.ExpressionValueError: Operation <INBOX object at 0x1BE2F5DECC0><Inbox> + 10<int> cannot be executed!
+                        
+                        During handling of the above exception, another exception occurred:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 953, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 196, in Run
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 148, in Call
+                        tts.testExecution.testSteps.dataoperations.calculationNG.TsCalculationExec.UserCodeException: Operation <INBOX object at 0x1BE2F5DECC0><Inbox> + 10<int> cannot be executed!
+2022-09-08 16:13:57.205 15856 Thread-132*sub ERROR:
+                        Traceback (most recent call last):
+                          File "tts\core\expressions\BaseExpressions.py", line 653, in Evaluate
+                        TypeError: unsupported operand type(s) for +: 'Inbox' and 'int'
+                        
+                        During handling of the above exception, another exception occurred:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 144, in Call
+                          File "tts\core\expressions\BaseExpressions.py", line 662, in Evaluate
+                        tts.core.expressions.BaseExpressions.ExpressionValueError: Operation <INBOX object at 0x1BE2F5DECC0><Inbox> + 10<int> cannot be executed!
+                        
+                        During handling of the above exception, another exception occurred:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 953, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 196, in Run
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 148, in Call
+                        tts.testExecution.testSteps.dataoperations.calculationNG.TsCalculationExec.UserCodeException: Operation <INBOX object at 0x1BE2F5DECC0><Inbox> + 10<int> cannot be executed!

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2022.2.125314+1e79c4002501" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace">
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">InitFrame</ID>
+			<XACCESS xsi:type="xaJob">
+				<PORT-ID xsi:type="string">BUS-CAN01</PORT-ID>
+				<JOB-NAME xsi:type="string">InitFrame</JOB-NAME>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">ReadFrame</ID>
+			<XACCESS xsi:type="xaJob">
+				<PORT-ID xsi:type="string">BUS-CAN01</PORT-ID>
+				<JOB-NAME xsi:type="string">ReadFrame</JOB-NAME>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">SendFrame</ID>
+			<XACCESS xsi:type="xaJob">
+				<PORT-ID xsi:type="string">BUS-CAN01</PORT-ID>
+				<JOB-NAME xsi:type="string">SendFrame</JOB-NAME>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">SendFrameCyclic</ID>
+			<XACCESS xsi:type="xaJob">
+				<PORT-ID xsi:type="string">BUS-CAN01</PORT-ID>
+				<JOB-NAME xsi:type="string">SendFrameCyclic</JOB-NAME>
+			</XACCESS>
+		</MAPPING-ITEM>
+	</MAPPING>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="4" id="ee62dc03-3201-44a9-8d2a-ab0cde0194b8" xsi:type="tsJob">
+			<MAPPING-REF xsi:type="string">InitFrame</MAPPING-REF>
+			<JOB-PARAMETER xsi:type="tsJobParameter">
+				<NAME xsi:type="string">FrameId</NAME>
+				<EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">0x1F4</VALUE>
+				</EXPRESSION>
+			</JOB-PARAMETER>
+			<JOB-PARAMETER xsi:type="tsJobParameter">
+				<NAME xsi:type="string">isExtended</NAME>
+			</JOB-PARAMETER>
+		</TESTSTEP>
+		<TESTSTEP format-rev="4" id="3d3a443c-57f8-420d-84d0-f335a39052c4" xsi:type="tsJob">
+			<MAPPING-REF xsi:type="string">SendFrame</MAPPING-REF>
+			<JOB-PARAMETER xsi:type="tsJobParameter">
+				<NAME xsi:type="string">DataByteStream</NAME>
+				<EXPRESSION xsi:type="functionBaseExpression">
+					<COMPONENT xsi:type="varBaseExpression">
+						<NAME xsi:type="string">ByteStream</NAME>
+					</COMPONENT>
+					<ARGUMENTS>
+						<ARGUMENT format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="string">01</VALUE>
+						</ARGUMENT>
+					</ARGUMENTS>
+				</EXPRESSION>
+			</JOB-PARAMETER>
+			<JOB-PARAMETER xsi:type="tsJobParameter">
+				<NAME xsi:type="string">FrameId</NAME>
+				<EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">0x1F4</VALUE>
+				</EXPRESSION>
+			</JOB-PARAMETER>
+			<JOB-PARAMETER xsi:type="tsJobParameter">
+				<NAME xsi:type="string">isExtended</NAME>
+			</JOB-PARAMETER>
+		</TESTSTEP>
+		<TESTSTEP format-rev="4" id="4d501e81-7d4f-42be-aa27-ba94dba7d642" xsi:type="tsJob">
+			<MAPPING-REF xsi:type="string">SendFrameCyclic</MAPPING-REF>
+			<JOB-PARAMETER xsi:type="tsJobParameter">
+				<NAME xsi:type="string">Count</NAME>
+				<EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">5</VALUE>
+				</EXPRESSION>
+			</JOB-PARAMETER>
+			<JOB-PARAMETER xsi:type="tsJobParameter">
+				<NAME xsi:type="string">DataByteStream</NAME>
+				<EXPRESSION xsi:type="functionBaseExpression">
+					<COMPONENT xsi:type="varBaseExpression">
+						<NAME xsi:type="string">ByteStream</NAME>
+					</COMPONENT>
+					<ARGUMENTS>
+						<ARGUMENT format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="string">01</VALUE>
+						</ARGUMENT>
+					</ARGUMENTS>
+				</EXPRESSION>
+			</JOB-PARAMETER>
+			<JOB-PARAMETER xsi:type="tsJobParameter">
+				<NAME xsi:type="string">FrameId</NAME>
+				<EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">0x1F4</VALUE>
+				</EXPRESSION>
+			</JOB-PARAMETER>
+			<JOB-PARAMETER xsi:type="tsJobParameter">
+				<NAME xsi:type="string">Interval</NAME>
+				<EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">20</VALUE>
+				</EXPRESSION>
+			</JOB-PARAMETER>
+			<JOB-PARAMETER xsi:type="tsJobParameter">
+				<NAME xsi:type="string">isExtended</NAME>
+			</JOB-PARAMETER>
+		</TESTSTEP>
+		<TESTSTEP format-rev="4" id="07a69dd2-0b98-4682-bf40-294dbf6a422d" xsi:type="tsJob">
+			<MAPPING-REF xsi:type="string">ReadFrame</MAPPING-REF>
+			<JOB-PARAMETER xsi:type="tsJobParameter">
+				<NAME xsi:type="string">doDelete</NAME>
+				<EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="boolean">False</VALUE>
+				</EXPRESSION>
+			</JOB-PARAMETER>
+			<JOB-PARAMETER xsi:type="tsJobParameter">
+				<NAME xsi:type="string">FrameId</NAME>
+				<EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">0x1F4</VALUE>
+				</EXPRESSION>
+			</JOB-PARAMETER>
+			<JOB-PARAMETER xsi:type="tsJobParameter">
+				<NAME xsi:type="string">isExtended</NAME>
+			</JOB-PARAMETER>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2022.2.125314+1e79c4002501" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace"/>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="3" id="4453654a-f6c7-445d-9b6e-1028f83f44a4" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+			<FORMULA xsi:type="sliceBaseExpression">
+				<COMPONENT xsi:type="functionBaseExpression">
+					<COMPONENT xsi:type="attributeBaseExpression">
+						<COMPONENT xsi:type="attributeBaseExpression">
+							<COMPONENT xsi:type="attributeBaseExpression">
+								<COMPONENT xsi:type="varBaseExpression">
+									<NAME xsi:type="string">api</NAME>
+								</COMPONENT>
+								<ATTR-NAME xsi:type="string">TestEnvironment</ATTR-NAME>
+							</COMPONENT>
+							<ATTR-NAME xsi:type="string">ExecutionInfo</ATTR-NAME>
+						</COMPONENT>
+						<ATTR-NAME xsi:type="string">GetCurrentPackageFilename</ATTR-NAME>
+					</COMPONENT>
+				</COMPONENT>
+				<START format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">0</VALUE>
+				</START>
+				<STOP xsi:type="unaryOpBaseExpression">
+					<NAME xsi:type="string">UNARY_NEGATIVE</NAME>
+					<COMPONENT format-rev="1" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">4</VALUE>
+					</COMPONENT>
+				</STOP>
+			</FORMULA>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>

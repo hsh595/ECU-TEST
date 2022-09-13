@@ -1,0 +1,26 @@
+
+
+= 08.09.2022 16:02:06 (UTC +8:00) === ECU-TEST 2021.2.113427+6b6fb661af22 113427+6b6fb661af22 (2021/06/28 11:25:11) (64bit) ===
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2022.4
+         - valid until: 31-dec-2022
+         - licensed for: TURING
+         - Server: 192.168.1.17
+
+
+2022-09-08 16:02:06.857 15856 ManagedWorker-3*PE.Run() INFO:
+                        Start package 'main.pkg' with test case execution with sequential analysis job execution
+2022-09-08 16:02:06.867 15856 ManagedWorker-3*PE.Run() INFO:
+                        Test case "main" started
+2022-09-08 16:02:06.870 15856 ManagedWorker-3*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2022-09-08 16:02:06.882 15856 ManagedWorker-3*PE.Run() INFO:
+                        System time mode activated
+2022-09-08 16:02:06.891 15856 ManagedWorker-3*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2022-09-08 16:02:06.892 15856 ManagedWorker-3*PE.Run() INFO:
+                        Test case "main" completed

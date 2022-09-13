@@ -1,0 +1,102 @@
+
+
+= 06.09.2022 15:05:02 (UTC +8:00) === ECU-TEST 2021.2.113427+6b6fb661af22 113427+6b6fb661af22 (2021/06/28 11:25:11) (64bit) ===
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2022.4
+         - valid until: 31-dec-2022
+         - licensed for: TURING
+         - Server: 192.168.1.17
+
+
+2022-09-06 15:05:02.253 22624 ManagedWorker-3*PE.Run() INFO:
+                        Start package 'test1_Labview.pkg' with test case execution with sequential analysis job execution
+2022-09-06 15:05:02.263 22624 ManagedWorker-3*PE.Run() INFO:
+                        Test case "test1_Labview" started
+2022-09-06 15:05:02.280 22624 ManagedWorker-3*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2022-09-06 15:05:02.295 22624 ManagedWorker-3*PE.Run() INFO:
+                        System time mode activated
+2022-09-06 15:05:02.372 22624 ToolLibs DEBUG:
+                        LabViewlib: Setting parameter:
+2022-09-06 15:05:02.374 22624 ToolLibs DEBUG:
+                        LabViewlib: Name:
+2022-09-06 15:05:02.376 22624 ToolLibs DEBUG:
+                        LabViewlib: a
+2022-09-06 15:05:02.377 22624 ToolLibs DEBUG:
+                        LabViewlib: Value:
+2022-09-06 15:05:02.378 22624 ToolLibs DEBUG:
+                        LabViewlib: 5
+2022-09-06 15:05:02.380 22624 ToolLibs DEBUG:
+                        LabViewlib: Name:
+2022-09-06 15:05:02.381 22624 ToolLibs DEBUG:
+                        LabViewlib:  b
+2022-09-06 15:05:02.383 22624 ToolLibs DEBUG:
+                        LabViewlib: Value:
+2022-09-06 15:05:02.384 22624 ToolLibs DEBUG:
+                        LabViewlib: 2
+2022-09-06 15:05:02.386 22624 ToolLibs DEBUG:
+                        LabViewlib: Starting VI ...
+2022-09-06 15:05:02.387 22624 ToolLibs DEBUG:
+                        LabViewlib:    .... completed
+2022-09-06 15:05:02.394 22624 ToolLibs DEBUG:
+                        LabViewlib: InitVi: ToolLib time: 15:05:02.390 Starte LabView
+2022-09-06 15:05:02.397 22624 ToolLibs DEBUG:
+                        LabViewlib: InitVi: ToolLib time: 15:05:02.393 Erstelle VI-Cache-Eintrag für den Pfad Add 1.vi
+2022-09-06 15:05:02.514 22624 ToolLibs DEBUG:
+                        LabViewlib: Setting parameter:
+2022-09-06 15:05:02.517 22624 ToolLibs DEBUG:
+                        LabViewlib: Name:
+2022-09-06 15:05:02.519 22624 ToolLibs DEBUG:
+                        LabViewlib: Boolean
+2022-09-06 15:05:02.520 22624 ToolLibs DEBUG:
+                        LabViewlib: Value:
+2022-09-06 15:05:02.522 22624 ToolLibs DEBUG:
+                        LabViewlib: 1
+2022-09-06 15:05:02.523 22624 ToolLibs DEBUG:
+                        LabViewlib: Starting VI ...
+2022-09-06 15:05:02.525 22624 ToolLibs DEBUG:
+                        LabViewlib:    .... completed
+2022-09-06 15:05:02.643 22624 ToolLibs DEBUG:
+                        LabViewlib: Setting parameter:
+2022-09-06 15:05:02.645 22624 ToolLibs DEBUG:
+                        LabViewlib: Name:
+2022-09-06 15:05:02.647 22624 ToolLibs DEBUG:
+                        LabViewlib: a
+2022-09-06 15:05:02.648 22624 ToolLibs DEBUG:
+                        LabViewlib: Value:
+2022-09-06 15:05:02.650 22624 ToolLibs DEBUG:
+                        LabViewlib: 7
+2022-09-06 15:05:02.652 22624 ToolLibs DEBUG:
+                        LabViewlib: Name:
+2022-09-06 15:05:02.654 22624 ToolLibs DEBUG:
+                        LabViewlib:  b
+2022-09-06 15:05:02.656 22624 ToolLibs DEBUG:
+                        LabViewlib: Value:
+2022-09-06 15:05:02.657 22624 ToolLibs DEBUG:
+                        LabViewlib: 2
+2022-09-06 15:05:02.659 22624 ToolLibs DEBUG:
+                        LabViewlib: Starting VI ...
+2022-09-06 15:05:02.660 22624 ToolLibs DEBUG:
+                        LabViewlib:    .... completed
+2022-09-06 15:05:02.780 22624 ToolLibs DEBUG:
+                        LabViewlib: Setting parameter:
+2022-09-06 15:05:02.783 22624 ToolLibs DEBUG:
+                        LabViewlib: Name:
+2022-09-06 15:05:02.785 22624 ToolLibs DEBUG:
+                        LabViewlib: Boolean
+2022-09-06 15:05:02.786 22624 ToolLibs DEBUG:
+                        LabViewlib: Value:
+2022-09-06 15:05:02.788 22624 ToolLibs DEBUG:
+                        LabViewlib: 1
+2022-09-06 15:05:02.789 22624 ToolLibs DEBUG:
+                        LabViewlib: Starting VI ...
+2022-09-06 15:05:02.791 22624 ToolLibs DEBUG:
+                        LabViewlib:    .... completed
+2022-09-06 15:05:02.900 22624 ManagedWorker-3*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2022-09-06 15:05:02.938 22624 ManagedWorker-3*PE.Run() INFO:
+                        Test case "test1_Labview" completed

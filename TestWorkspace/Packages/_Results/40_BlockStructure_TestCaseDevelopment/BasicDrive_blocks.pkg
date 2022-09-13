@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="6" prog-version="7.2.0.79918" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="unicode"/>
+		<VERSION xsi:type="unicode"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="unicode"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="unicode"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="unicode">drvreq</NAME>
+			<DESCRIPTION xsi:type="unicode">in km/h</DESCRIPTION>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">50</DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace"/>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="2" id="188" name="TsPrecondBlock" xsi:type="utility-fd32d18b-c16d-45ca-9934-f8bffe11fcc3">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="de_DE">
+						<DVALUE xsi:type="unicode">Precondition</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="unicode">Precondition</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP format-rev="3" id="190" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="unicode">Check state of charge</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+				</ACTION>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="192" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="unicode">Establish &quot;vehicle traction standby&quot; and switch to &quot;E&quot; (4)</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+				</ACTION>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="194" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="unicode">Action</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP format-rev="3" id="196" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="unicode">Set driver request to {drvreq} %</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+				</ACTION>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="198" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="unicode">Check velocity</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+				</ACTION>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="200" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="unicode">Set driver request to 0 %</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+				</ACTION>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="202" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="unicode">Check velocity</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+				</ACTION>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP format-rev="2" id="204" name="TsPostcondBlock" xsi:type="utility-0d2ac4dc-1d8f-4182-81d1-a5d5ca74a44f">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="de_DE">
+						<DVALUE xsi:type="unicode">Postcondition</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="unicode">Postcondition</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+			</ACTION>
+			<EFFECT-TEST-RESULT xsi:type="boolean">False</EFFECT-TEST-RESULT>
+			<TESTSTEP format-rev="3" id="206" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="unicode">Stop vehicle</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+				</ACTION>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="208" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="unicode">Switch to &quot;P&quot; (0) and unestablish VehTrStby</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+				</ACTION>
+			</TESTSTEP>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>

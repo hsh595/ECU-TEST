@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CONFIGURATION format-rev="8" prog-version="2021.2.113427+6b6fb661af22" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test application.configuration.xsd">
+	<COMMON xsi:type="commonData">
+		<HOST xsi:type="string">pengl</HOST>
+		<QUERY-TESTER xsi:type="integer">2</QUERY-TESTER>
+	</COMMON>
+	<REPORT format-rev="4" xsi:type="reportData">
+		<REPORT-FORMATES/>
+		<INCLUDE-APPLICATION-LOGS xsi:type="boolean">True</INCLUDE-APPLICATION-LOGS>
+	</REPORT>
+	<EXECUTION-DATA format-rev="1" xsi:type="executionData"/>
+	<FUNCTION-ACCESS format-rev="1" xsi:type="functionAccessData">
+		<DATA dkey="VI">
+			<DVALUE xsi:type="functionData">
+				<FUNCTION-ACCESS-PORT xsi:type="string">FCT01</FUNCTION-ACCESS-PORT>
+				<FUNCTION-FILE xsi:type="string">Add1.vi</FUNCTION-FILE>
+				<FUNCTION-POSITION xsi:type="integer">1</FUNCTION-POSITION>
+			</DVALUE>
+		</DATA>
+	</FUNCTION-ACCESS>
+</CONFIGURATION>

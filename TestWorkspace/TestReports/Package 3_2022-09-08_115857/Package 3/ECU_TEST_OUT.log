@@ -1,0 +1,34 @@
+
+
+= 08.09.2022 11:58:57 (UTC +8:00) === ECU-TEST 2021.2.113427+6b6fb661af22 113427+6b6fb661af22 (2021/06/28 11:25:11) (64bit) ===
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2022.4
+         - valid until: 31-dec-2022
+         - licensed for: TURING
+         - Server: 192.168.1.17
+
+
+2022-09-08 11:58:57.838 15856 ManagedWorker-3*PE.Run() INFO:
+                        Start package '' with test case execution with sequential analysis job execution
+2022-09-08 11:58:57.843 15856 ManagedWorker-3*PE.Run() INFO:
+                        Test case "Package 3" started
+2022-09-08 11:58:57.846 15856 ManagedWorker-3*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2022-09-08 11:58:57.855 15856 ManagedWorker-3*PE.Run() INFO:
+                        System time mode activated
+2022-09-08 11:58:57.864 15856 ManagedWorker-3*PE.Run() ERROR:
+                        Test step 2(Execute): "An error occurred when calling "ByteStream('010540')": invalid Syntax"
+                        Package "Package 3"#2
+2022-09-08 11:58:57.867 15856 ManagedWorker-3*PE.Run() ERROR:
+                        tts.testExecution.engine.TestEngine.ExecuteTestStep: An error occurred when calling "ByteStream('010540')": invalid Syntax
+                        Package "Package 3"#2
+2022-09-08 11:58:57.880 15856 ManagedWorker-3*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2022-09-08 11:58:57.884 15856 ManagedWorker-3*PE.Run() INFO:
+                        Test case "Package 3" completed
+2022-09-08 11:58:57.889 15856 ManagedWorker-3*PE.Run() ERROR:
+                        tts.core.report.TestReport.Process: 'NoneType' object has no attribute 'GetValue'

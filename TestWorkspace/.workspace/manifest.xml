@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MANIFEST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<workspaceDependenyList>
+		<ELEMENT xsi:type="workspaceDependency">
+			<workspacePath xsi:type="string">C:/0_ET_Workspace/0_ET_Workspace/1_Exercises/2_ECU-TEST_Advanced</workspacePath>
+		</ELEMENT>
+	</workspaceDependenyList>
+</MANIFEST>

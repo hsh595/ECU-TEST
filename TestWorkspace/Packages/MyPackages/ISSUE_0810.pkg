@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2022.1.122292+3eb90b936db3" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">TextFile</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE xsi:type="function">
+				<CODE xsi:type="string">
+# function must be named 'func'
+
+def func(path, DTCs1, DTCs_Text1,DTCs2, DTCs_Text2,DTCs3, DTCs_Text3, DTCs4, DTCs_Text4,ECUName1,ECUName2,ECUName3,ECUName4,Package_name, var,type,antriebsart):
+    import os
+    os.chdir(path)
+    
+    lenDTCs1 = len(DTCs1)
+    lenDTCs_Text1 = len(DTCs_Text1)
+    
+    lenDTCs2 = len(DTCs2)
+    lenDTCs_Text2 = len(DTCs_Text2)
+    
+    lenDTCs3 = len(DTCs3)
+    lenDTCs_Text3 = len(DTCs_Text3)
+    
+    if (antriebsart == 'AWD'):
+        lenDTCs4 = len(DTCs4)
+        lenDTCs_Text4 = len(DTCs_Text4)
+    
+    currentEntries = []
+    
+    fileName = type +'.txt'    
+    
+    if not os.path.exists(fileName):
+        fWrite = open(fileName, 'w').close()
+        
+        fWrite = open(fileName, 'a')
+       
+        fWrite.close()
+    
+        
+    fWrite = open(fileName, 'a')
+    #fWrite.write('\n')
+ 
+    if(var == 'Pre'):
+        fWrite.write('------------------------------------------------------------------\n') 
+        fWrite.write('Pre-Condition DTCs: \n')
+        fWrite.write('------------------------------------------------------------------\n')  
+    if(var == 'Post'):
+        fWrite.write('------------------------------------------------------------------\n') 
+        fWrite.write('Post-Condition DTCs: \n')
+        fWrite.write('------------------------------------------------------------------\n')
+    if(var == 'Action'):
+        fWrite.write('------------------------------------------------------------------\n') 
+        fWrite.write('Action DTCs: \n')
+        fWrite.write('------------------------------------------------------------------\n')  
+                
+    if ((lenDTCs1 == lenDTCs_Text1) and ( lenDTCs1 &gt; 0)):
+    
+        for DTC1 in range(0, lenDTCs1):
+            temp = hex(int(DTCs1[DTC1]))
+            fWrite.write(str(ECUName1) + ' - ' + str('DTC:')+str(temp) + '--' + str(DTCs_Text1[DTC1]))
+            fWrite.write(&quot;\n&quot;)
+    else:
+         fWrite.write(str(ECUName1) + ' - ' +'No DTC found \n')
+    
+    fWrite.write('------------------------------------------------------------------\n') 
+    
+    if ((lenDTCs2 == lenDTCs_Text2) and ( lenDTCs2 &gt; 0)):
+        fWrite.write('\n')
+        for DTC2 in range(0, lenDTCs2):
+            temp = hex(int(DTCs2[DTC2]))
+            fWrite.write(str(ECUName2) + ' - ' + str('DTC:')+str(temp) + '--' + str(DTCs_Text2[DTC2]))
+            fWrite.write(&quot;\n&quot;)
+    else:
+        fWrite.write(str(ECUName2) + ' - ' +'No DTC found \n')
+        
+    fWrite.write('------------------------------------------------------------------\n') 
+    
+    if ((lenDTCs3 == lenDTCs_Text3) and ( lenDTCs3 &gt; 0)):
+        fWrite.write('\n')
+        for DTC3 in range(0, lenDTCs3):
+            temp = hex(int(DTCs3[DTC3]))
+            fWrite.write(str(ECUName3) + ' - ' + str('DTC:')+str(temp) + '--' + str(DTCs_Text3[DTC3]))
+            fWrite.write(&quot;\n&quot;)
+    else:
+        fWrite.write(str(ECUName3) + ' - ' +'No DTC found \n')
+        
+    if (antriebsart == 'AWD'):
+        fWrite.write('------------------------------------------------------------------\n') 
+        if ((lenDTCs4 == lenDTCs_Text4) and ( lenDTCs4 &gt; 0)):
+            fWrite.write('\n')
+            for DTC4 in range(0, lenDTCs4):
+                temp = hex(int(DTCs4[DTC4]))
+                fWrite.write(str(ECUName4) + ' - ' + str('DTC:')+str(temp) + '--' + str(DTCs_Text4[DTC4]))
+                fWrite.write(&quot;\n&quot;)
+        else:
+            fWrite.write(str(ECUName3) + ' - ' +'No DTC found \n')
+
+    pass
+</CODE>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">path</NAME>
+			<DESCRIPTION xsi:type="string">Enter the path of the report report (through api job)</DESCRIPTION>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<COMPLEX-DATA xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="de_DE">
+							<DVALUE xsi:type="string">C:\Users\VS008017\Desktop\ECUTEST_REPORT\Package 23_2022-08-10_162258\Package 23</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+				</COMPLEX-DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">DTCs_1</NAME>
+			<DESCRIPTION xsi:type="string">Enter the list of DTCs (Variable in dec/hex) here</DESCRIPTION>
+			<DEFAULT-VALUE xsi:type="pyObject">
+				<OBJECT xsi:type="string">[205204, 14128924, 14128516, 14128876, 14128552, 145974, 14128959, 2248544, 14129494, 2244821, 200595, 14128248, 14128180, 14128632, 14129061, 14129372, 2248591, 146053, 14128304, 14128704, 14129010, 146048, 146064, 2248524, 12189859, 12189862, 12189860, 12189864, 12189863, 12189861]</OBJECT>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">DTCs_Text_1</NAME>
+			<DESCRIPTION xsi:type="string">Enter the variable which contains DTCs text</DESCRIPTION>
+			<DEFAULT-VALUE xsi:type="pyObject">
+				<OBJECT xsi:type="string">['AC-Laden, Ladeanschlussklappe, Positionssensor: Zustand unplausibel', 'Botschaft (Übereinstimmung Navigationsgraph, ID: NAV_GRAPH_MATCH) fehlt', 'Botschaft (Nav-Graph 2 Aktuelle Segment, ID: NAVGRPH_2_PRES_SEG) fehlt', 'Botschaft (Uhrzeit/Datum, ID: UHRZEIT_DATUM) fehlt', 'Botschaft (Navigation System Information, ID: NAV_SYS_INF) fehlt', 'SecOC: Freshness Value Synchronisation fehlgeschlagen', 'Botschaft (Bedienung Timer, ID: OP_TIMER) fehlt', 'Kuehlsystem: Minimumschwelle Ausgleichsbehaelter unterschritten', 'Botschaft (DisplaySpeedLimitAndNoPassingRestriction, ID: DisplaySpeedLimitAndNoPassingRestriction) fehlt', 'Elektrolüfter Sicherungsrelais, Ansteuerleitung: Kurzschluss nach Masse', 'DC/DC-Wandler, Niedervolt-Stromstärke: Signal unplausibel', 'Botschaft (Einheiten BN2020, ID: EINHEITEN_BN2020) fehlt', 'Botschaft (Außentemperatur, ID: A_TEMP) fehlt', 'Botschaft (Relativzeit BN2020, ID: RELATIVZEIT) fehlt', 'Botschaft (Kilometerstand_2, ID: Kilometerstand_2) fehlt', 'Botschaft (ExternalToEAVehicleDynamicData2, ID: ExternalToEAVehicleDynamicData2) fehlt', 'Funktion: Service Bedarf demnächst', 'Secure ECU Modes: ECU not in field mode.', 'Botschaft (Geschwindigkeit Fahrzeug, ID: V_VEH) fehlt', 'Botschaft (Status Reibwert Fahrdynamik, ID: ST_MUE_DRDY) fehlt', 'Botschaft (PowertrainGuidanceTargetLimit, ID: PowertrainGuidanceTargetLimit) fehlt', 'ZERTIFIKATE_UND_BINDINGS_TYP1_WERK_NICHT_BEREIT', 'SecOC: Keypack nicht vorhanden oder Keypackprüfung fehlgeschlagen', 'Wärmemanagement, Fehler: Kühlleistung eingeschränkt', 'SecOC Verifikation der Botschaft V_VEH fehlgeschlagen, Sender: IB_VIP', 'SecOC Verifikation der Botschaft TAR_WMOM_PT_STAB fehlgeschlagen, Sender: IB_BRS', 'SecOC Verifikation der Botschaft ST_MUE_DRDY fehlgeschlagen, Sender: IB_VIP', 'SecOC Verifikation der Botschaft SecureDateAndTimeSDaTQualifying fehlgeschlagen, Sender: BCP21', 'SecOC Verifikation der Botschaft SecureDateAndTimeSDaT fehlgeschlagen, Sender: BCP21', 'SecOC Verifikation der Botschaft PowerTrainGuidanceTargetLimit fehlgeschlagen, Sender: IB_VIP']</OBJECT>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">DTCs_2</NAME>
+			<DESCRIPTION xsi:type="string">Enter the list of DTCs (Variable in dec/hex) here</DESCRIPTION>
+			<DEFAULT-VALUE xsi:type="pyObject">
+				<OBJECT xsi:type="string">[]</OBJECT>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">DTCs_Text_2</NAME>
+			<DESCRIPTION xsi:type="string">Enter the variable which contains DTCs text</DESCRIPTION>
+			<DEFAULT-VALUE xsi:type="pyObject">
+				<OBJECT xsi:type="string">[]</OBJECT>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">DTCs_3</NAME>
+			<DESCRIPTION xsi:type="string">Enter the list of DTCs (Variable in dec/hex) here</DESCRIPTION>
+			<DEFAULT-VALUE xsi:type="pyObject">
+				<OBJECT xsi:type="string">[]</OBJECT>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">DTCs_Text_3</NAME>
+			<DESCRIPTION xsi:type="string">Enter the variable which contains DTCs text</DESCRIPTION>
+			<DEFAULT-VALUE xsi:type="pyObject">
+				<OBJECT xsi:type="string">[]</OBJECT>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">DTCs_4</NAME>
+			<DESCRIPTION xsi:type="string">Enter the list of DTCs (Variable in dec/hex) here</DESCRIPTION>
+			<DEFAULT-VALUE xsi:type="pyObject">
+				<OBJECT xsi:type="string">[]</OBJECT>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">DTCs_Text_4</NAME>
+			<DESCRIPTION xsi:type="string">Enter the variable which contains DTCs text</DESCRIPTION>
+			<DEFAULT-VALUE xsi:type="pyObject">
+				<OBJECT xsi:type="string">[]</OBJECT>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">ECUName_1</NAME>
+			<DESCRIPTION xsi:type="string">Enter the ECU name for eg. 'EME'</DESCRIPTION>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<COMPLEX-DATA xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="de_DE">
+							<DVALUE xsi:type="string">CCU</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+				</COMPLEX-DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">ECUName_2</NAME>
+			<DESCRIPTION xsi:type="string">Enter the ECU name for eg. 'EME'</DESCRIPTION>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<COMPLEX-DATA xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="de_DE">
+							<DVALUE xsi:type="string">BMU</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+				</COMPLEX-DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">ECUName_3</NAME>
+			<DESCRIPTION xsi:type="string">Enter the ECU name for eg. 'EME'</DESCRIPTION>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<COMPLEX-DATA xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="de_DE">
+							<DVALUE xsi:type="string">TEE1</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+				</COMPLEX-DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">ECUName_4</NAME>
+			<DESCRIPTION xsi:type="string">Enter the ECU name for eg. 'EME'</DESCRIPTION>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<COMPLEX-DATA xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="de_DE">
+							<DVALUE xsi:type="string">TEE2</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+				</COMPLEX-DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">Package_name</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<COMPLEX-DATA xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="de_DE">
+							<DVALUE xsi:type="string">FWEGFWE</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+				</COMPLEX-DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">var</NAME>
+			<DESCRIPTION xsi:type="string">1: DTCs after the test execution, 0: DTCs before the test execution</DESCRIPTION>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">1</DATA>
+				<TEXTDATA xsi:type="string">1</TEXTDATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">antriebsart</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<COMPLEX-DATA xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="de_DE">
+							<DVALUE xsi:type="string">RWD</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+				</COMPLEX-DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">type</NAME>
+			<DESCRIPTION xsi:type="string"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<COMPLEX-DATA xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="de_DE">
+							<DVALUE xsi:type="string">FS_Lesen</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+				</COMPLEX-DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace"/>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="3" id="d9dc992f-63fb-4af8-b829-a5def7be8d1b" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+			<FORMULA xsi:type="functionBaseExpression">
+				<COMPONENT xsi:type="varBaseExpression">
+					<NAME xsi:type="string">TextFile</NAME>
+				</COMPONENT>
+				<ARGUMENTS>
+					<ARGUMENT xsi:type="varBaseExpression">
+						<NAME xsi:type="string">path</NAME>
+					</ARGUMENT>
+					<ARGUMENT xsi:type="varBaseExpression">
+						<NAME xsi:type="string">DTCs_1</NAME>
+					</ARGUMENT>
+					<ARGUMENT xsi:type="varBaseExpression">
+						<NAME xsi:type="string">DTCs_Text_1</NAME>
+					</ARGUMENT>
+					<ARGUMENT xsi:type="varBaseExpression">
+						<NAME xsi:type="string">DTCs_2</NAME>
+					</ARGUMENT>
+					<ARGUMENT xsi:type="varBaseExpression">
+						<NAME xsi:type="string">DTCs_Text_2</NAME>
+					</ARGUMENT>
+					<ARGUMENT xsi:type="varBaseExpression">
+						<NAME xsi:type="string">DTCs_3</NAME>
+					</ARGUMENT>
+					<ARGUMENT xsi:type="varBaseExpression">
+						<NAME xsi:type="string">DTCs_Text_3</NAME>
+					</ARGUMENT>
+					<ARGUMENT xsi:type="varBaseExpression">
+						<NAME xsi:type="string">DTCs_4</NAME>
+					</ARGUMENT>
+					<ARGUMENT xsi:type="varBaseExpression">
+						<NAME xsi:type="string">DTCs_Text_4</NAME>
+					</ARGUMENT>
+					<ARGUMENT xsi:type="varBaseExpression">
+						<NAME xsi:type="string">ECUName_1</NAME>
+					</ARGUMENT>
+					<ARGUMENT xsi:type="varBaseExpression">
+						<NAME xsi:type="string">ECUName_2</NAME>
+					</ARGUMENT>
+					<ARGUMENT xsi:type="varBaseExpression">
+						<NAME xsi:type="string">ECUName_3</NAME>
+					</ARGUMENT>
+					<ARGUMENT xsi:type="varBaseExpression">
+						<NAME xsi:type="string">ECUName_4</NAME>
+					</ARGUMENT>
+					<ARGUMENT xsi:type="varBaseExpression">
+						<NAME xsi:type="string">Package_name</NAME>
+					</ARGUMENT>
+					<ARGUMENT xsi:type="varBaseExpression">
+						<NAME xsi:type="string">var</NAME>
+					</ARGUMENT>
+					<ARGUMENT xsi:type="varBaseExpression">
+						<NAME xsi:type="string">type</NAME>
+					</ARGUMENT>
+					<ARGUMENT xsi:type="varBaseExpression">
+						<NAME xsi:type="string">antriebsart</NAME>
+					</ARGUMENT>
+				</ARGUMENTS>
+			</FORMULA>
+			<INSTANCE-NAME xsi:type="string">Log_Fs_Lesen</INSTANCE-NAME>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>

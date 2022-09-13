@@ -1,0 +1,54 @@
+
+
+= 06.09.2022 16:11:24 (UTC +8:00) === ECU-TEST 2021.2.113427+6b6fb661af22 113427+6b6fb661af22 (2021/06/28 11:25:11) (64bit) ===
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2022.4
+         - valid until: 31-dec-2022
+         - licensed for: TURING
+         - Server: 192.168.1.17
+
+
+2022-09-06 16:11:24.626 7664 ManagedWorker-4*PE.Run() INFO:
+                        Start package 'BasicDrive.pkg' with test case execution with sequential analysis job execution
+2022-09-06 16:11:24.649 7664 ManagedWorker-4*PE.Run() INFO:
+                        Test case "BasicDrive" started
+2022-09-06 16:11:24.676 7664 ManagedWorker-4*PE.Run() WARNING:
+                        Acquisition rate could not be used for value "recup" (use 100ms instead of 10ms)
+2022-09-06 16:11:24.678 7664 ManagedWorker-4*PE.Run() WARNING:
+                        Acquisition rate could not be used for value "speed" (use 200ms instead of 10ms)
+2022-09-06 16:11:24.681 7664 ManagedWorker-4*PE.Run() WARNING:
+                        Acquisition rate could not be used for value "speed" (use 200ms instead of 10ms)
+2022-09-06 16:11:24.706 7664 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2022-09-06 16:11:24.729 7664 ManagedWorker-4*PE.Run() INFO:
+                        System time mode activated
+2022-09-06 16:11:24.731 7664 ManagedWorker-4*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Recording group for Plant model
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\_Results\50_TestCaseDevelopment\BasicDrive.pkg"#0
+2022-09-06 16:11:24.733 7664 ManagedWorker-4*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Recording group for Engine-Control
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\_Results\50_TestCaseDevelopment\BasicDrive.pkg"#0
+2022-09-06 16:11:46.954 7664 ManagedWorker-4*PE.Run() INFO:
+                        1. Recording for Recording group for Plant model: Autostop
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\_Results\50_TestCaseDevelopment\BasicDrive.pkg"#0
+2022-09-06 16:11:46.957 7664 ManagedWorker-4*PE.Run() INFO:
+                        1. Recording for Recording group for Engine-Control: Autostop
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\_Results\50_TestCaseDevelopment\BasicDrive.pkg"#0
+2022-09-06 16:11:47.010 7664 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2022-09-06 16:11:48.020 7664 ManagedWorker-4*PE.Run() INFO:
+                        Test case "BasicDrive" completed
+2022-09-06 16:11:48.120 7664 ManagedWorker-4*PE.Run() INFO:
+                        Start analysis job "Job_1" ("C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\_Results\50_TestCaseDevelopment\BasicDrive.pkg" -> "Basic Drive")
+2022-09-06 16:11:48.211 7664 ManagedWorker-4*PE.Run() DEBUG:
+                        Performing episode ...
+2022-09-06 16:11:48.213 7664 ManagedWorker-4*PE.Run() DEBUG:
+                        
+2022-09-06 16:11:49.748 7664 ManagedWorker-4*PE.Run() DEBUG:
+                        Episode completed
+2022-09-06 16:11:49.750 7664 ManagedWorker-4*PE.Run() DEBUG:
+                        

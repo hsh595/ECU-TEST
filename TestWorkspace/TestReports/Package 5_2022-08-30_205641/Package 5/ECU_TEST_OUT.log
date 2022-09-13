@@ -1,0 +1,32 @@
+
+
+= 30.08.2022 20:56:41 (UTC +8:00) === ECU-TEST 2022.2.125314+1e79c4002501 125314+1e79c4002501 (2022/06/14 12:33:44) (64bit) ===
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)]
+
+Roaming License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2022.4
+         - valid until: 14-sep-2022
+         - licensed for: TURING
+
+
+2022-08-30 20:56:41.369 9260 ManagedWorker-6*PE.Run() INFO:
+                        Start package 'Package 5.pkg' with test case execution with sequential analysis job execution
+2022-08-30 20:56:41.416 9260 ManagedWorker-6*PE.Run() INFO:
+                        Test case "Package 5" started
+2022-08-30 20:56:41.419 9260 ManagedWorker-6*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2022-08-30 20:56:41.424 9260 ManagedWorker-6*PE.Run() INFO:
+                        System time mode activated
+2022-08-30 20:56:41.432 9260 ManagedWorker-6*PE.Run() ERROR:
+                        Test step 1(Calculation): "'method' object is not subscriptable"
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\Package 5.pkg"#1
+2022-08-30 20:56:41.434 9260 ManagedWorker-6*PE.Run() ERROR:
+                        tts.testExecution.engine.TestEngine.ExecuteTestStep: UserCodeException: 'method' object is not subscriptable
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\Package 5.pkg"#1
+2022-08-30 20:56:41.449 9260 ManagedWorker-6*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2022-08-30 20:56:41.451 9260 ManagedWorker-6*PE.Run() INFO:
+                        Test case "Package 5" completed

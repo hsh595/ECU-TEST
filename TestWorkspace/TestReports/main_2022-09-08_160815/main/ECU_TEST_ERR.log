@@ -1,0 +1,152 @@
+
+
+= 08.09.2022 16:08:15 (UTC +8:00) === ECU-TEST 2021.2.113427+6b6fb661af22 113427+6b6fb661af22 (2021/06/28 11:25:11) (64bit) ===
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2022.4
+         - valid until: 31-dec-2022
+         - licensed for: TURING
+         - Server: 192.168.1.17
+
+
+2022-09-08 16:08:15.240 15856 Thread-128*sub ERROR:
+                        Traceback (most recent call last):
+                          File "tts\core\expressions\BaseExpressions.py", line 650, in Evaluate
+                          File "tts\core\expressions\BaseExpressions.py", line 929, in Evaluate
+                          File "tts\testExecution\engine\Namespace.py", line 113, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 67, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 48, in __varToValue
+                        tts.core.package.varManager.Exceptions.VariableError: Read access to uninitialized variable: savein_inbox
+                        
+                        During handling of the above exception, another exception occurred:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 144, in Call
+                          File "tts\core\expressions\BaseExpressions.py", line 665, in Evaluate
+                        tts.core.expressions.BaseExpressions.ExpressionValueError: VariableError: Read access to uninitialized variable: savein_inbox
+                        
+                        During handling of the above exception, another exception occurred:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 953, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 196, in Run
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 148, in Call
+                        tts.testExecution.testSteps.dataoperations.calculationNG.TsCalculationExec.UserCodeException: VariableError: Read access to uninitialized variable: savein_inbox
+2022-09-08 16:08:35.253 15856 Thread-128*sub ERROR:
+                        Traceback (most recent call last):
+                          File "tts\core\expressions\BaseExpressions.py", line 650, in Evaluate
+                          File "tts\core\expressions\BaseExpressions.py", line 929, in Evaluate
+                          File "tts\testExecution\engine\Namespace.py", line 113, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 67, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 48, in __varToValue
+                        tts.core.package.varManager.Exceptions.VariableError: Read access to uninitialized variable: savein_inbox
+                        
+                        During handling of the above exception, another exception occurred:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 144, in Call
+                          File "tts\core\expressions\BaseExpressions.py", line 665, in Evaluate
+                        tts.core.expressions.BaseExpressions.ExpressionValueError: VariableError: Read access to uninitialized variable: savein_inbox
+                        
+                        During handling of the above exception, another exception occurred:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 953, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 196, in Run
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 148, in Call
+                        tts.testExecution.testSteps.dataoperations.calculationNG.TsCalculationExec.UserCodeException: VariableError: Read access to uninitialized variable: savein_inbox
+2022-09-08 16:08:55.266 15856 Thread-128*sub ERROR:
+                        Traceback (most recent call last):
+                          File "tts\core\expressions\BaseExpressions.py", line 650, in Evaluate
+                          File "tts\core\expressions\BaseExpressions.py", line 929, in Evaluate
+                          File "tts\testExecution\engine\Namespace.py", line 113, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 67, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 48, in __varToValue
+                        tts.core.package.varManager.Exceptions.VariableError: Read access to uninitialized variable: savein_inbox
+                        
+                        During handling of the above exception, another exception occurred:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 144, in Call
+                          File "tts\core\expressions\BaseExpressions.py", line 665, in Evaluate
+                        tts.core.expressions.BaseExpressions.ExpressionValueError: VariableError: Read access to uninitialized variable: savein_inbox
+                        
+                        During handling of the above exception, another exception occurred:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 953, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 196, in Run
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 148, in Call
+                        tts.testExecution.testSteps.dataoperations.calculationNG.TsCalculationExec.UserCodeException: VariableError: Read access to uninitialized variable: savein_inbox
+2022-09-08 16:09:15.278 15856 Thread-128*sub ERROR:
+                        Traceback (most recent call last):
+                          File "tts\core\expressions\BaseExpressions.py", line 650, in Evaluate
+                          File "tts\core\expressions\BaseExpressions.py", line 929, in Evaluate
+                          File "tts\testExecution\engine\Namespace.py", line 113, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 67, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 48, in __varToValue
+                        tts.core.package.varManager.Exceptions.VariableError: Read access to uninitialized variable: savein_inbox
+                        
+                        During handling of the above exception, another exception occurred:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 144, in Call
+                          File "tts\core\expressions\BaseExpressions.py", line 665, in Evaluate
+                        tts.core.expressions.BaseExpressions.ExpressionValueError: VariableError: Read access to uninitialized variable: savein_inbox
+                        
+                        During handling of the above exception, another exception occurred:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 953, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 196, in Run
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 148, in Call
+                        tts.testExecution.testSteps.dataoperations.calculationNG.TsCalculationExec.UserCodeException: VariableError: Read access to uninitialized variable: savein_inbox
+2022-09-08 16:09:35.291 15856 Thread-128*sub ERROR:
+                        Traceback (most recent call last):
+                          File "tts\core\expressions\BaseExpressions.py", line 650, in Evaluate
+                          File "tts\core\expressions\BaseExpressions.py", line 929, in Evaluate
+                          File "tts\testExecution\engine\Namespace.py", line 113, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 67, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 48, in __varToValue
+                        tts.core.package.varManager.Exceptions.VariableError: Read access to uninitialized variable: savein_inbox
+                        
+                        During handling of the above exception, another exception occurred:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 144, in Call
+                          File "tts\core\expressions\BaseExpressions.py", line 665, in Evaluate
+                        tts.core.expressions.BaseExpressions.ExpressionValueError: VariableError: Read access to uninitialized variable: savein_inbox
+                        
+                        During handling of the above exception, another exception occurred:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 953, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 196, in Run
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 148, in Call
+                        tts.testExecution.testSteps.dataoperations.calculationNG.TsCalculationExec.UserCodeException: VariableError: Read access to uninitialized variable: savein_inbox
+2022-09-08 16:09:55.301 15856 Thread-128*sub ERROR:
+                        Traceback (most recent call last):
+                          File "tts\core\expressions\BaseExpressions.py", line 650, in Evaluate
+                          File "tts\core\expressions\BaseExpressions.py", line 929, in Evaluate
+                          File "tts\testExecution\engine\Namespace.py", line 113, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 67, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 48, in __varToValue
+                        tts.core.package.varManager.Exceptions.VariableError: Read access to uninitialized variable: savein_inbox
+                        
+                        During handling of the above exception, another exception occurred:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 144, in Call
+                          File "tts\core\expressions\BaseExpressions.py", line 665, in Evaluate
+                        tts.core.expressions.BaseExpressions.ExpressionValueError: VariableError: Read access to uninitialized variable: savein_inbox
+                        
+                        During handling of the above exception, another exception occurred:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 953, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 196, in Run
+                          File "tts\testExecution\testSteps\dataoperations\calculationNG\TsCalculationExec.py", line 148, in Call
+                        tts.testExecution.testSteps.dataoperations.calculationNG.TsCalculationExec.UserCodeException: VariableError: Read access to uninitialized variable: savein_inbox

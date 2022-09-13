@@ -1,0 +1,184 @@
+
+
+= 08.09.2022 15:28:33 (UTC +8:00) === ECU-TEST 2021.2.113427+6b6fb661af22 113427+6b6fb661af22 (2021/06/28 11:25:11) (64bit) ===
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2022.4
+         - valid until: 31-dec-2022
+         - licensed for: TURING
+         - Server: 192.168.1.17
+
+
+2022-09-08 15:28:33.883 15856 ManagedWorker-4*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 953, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\dataoperations\inboxfetch\TsInboxFetchExec.py", line 103, in Run
+                          File "tts\testExecution\testSteps\dataoperations\inboxfetch\TsInboxFetchExec.py", line 80, in Call
+                          File "tts\core\package\dataStructures\Inbox.py", line 216, in FetchNext
+                        tt._Exceptions_.TTError: Waiting for next message not allowed for disconnected inbox
+2022-09-08 15:28:33.892 15856 ManagedWorker-4*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 953, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\controlflow\ifthenelse\TsIfThenElseExec.py", line 108, in Run
+                          File "tts\core\expressions\BaseExpressions.py", line 852, in Evaluate
+                          File "tts\core\expressions\BaseExpressions.py", line 929, in Evaluate
+                          File "tts\testExecution\engine\Namespace.py", line 113, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 67, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 48, in __varToValue
+                        tts.core.package.varManager.Exceptions.VariableError: Read access to uninitialized variable: savein_inbox
+2022-09-08 15:28:33.902 15856 ManagedWorker-4*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 953, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\dataoperations\inboxfetch\TsInboxFetchExec.py", line 103, in Run
+                          File "tts\testExecution\testSteps\dataoperations\inboxfetch\TsInboxFetchExec.py", line 80, in Call
+                          File "tts\core\package\dataStructures\Inbox.py", line 216, in FetchNext
+                        tt._Exceptions_.TTError: Waiting for next message not allowed for disconnected inbox
+2022-09-08 15:28:33.916 15856 ManagedWorker-4*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 953, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\controlflow\ifthenelse\TsIfThenElseExec.py", line 108, in Run
+                          File "tts\core\expressions\BaseExpressions.py", line 852, in Evaluate
+                          File "tts\core\expressions\BaseExpressions.py", line 929, in Evaluate
+                          File "tts\testExecution\engine\Namespace.py", line 113, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 67, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 48, in __varToValue
+                        tts.core.package.varManager.Exceptions.VariableError: Read access to uninitialized variable: savein_inbox
+2022-09-08 15:28:33.929 15856 ManagedWorker-4*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 953, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\dataoperations\inboxfetch\TsInboxFetchExec.py", line 103, in Run
+                          File "tts\testExecution\testSteps\dataoperations\inboxfetch\TsInboxFetchExec.py", line 80, in Call
+                          File "tts\core\package\dataStructures\Inbox.py", line 216, in FetchNext
+                        tt._Exceptions_.TTError: Waiting for next message not allowed for disconnected inbox
+2022-09-08 15:28:33.940 15856 ManagedWorker-4*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 953, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\controlflow\ifthenelse\TsIfThenElseExec.py", line 108, in Run
+                          File "tts\core\expressions\BaseExpressions.py", line 852, in Evaluate
+                          File "tts\core\expressions\BaseExpressions.py", line 929, in Evaluate
+                          File "tts\testExecution\engine\Namespace.py", line 113, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 67, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 48, in __varToValue
+                        tts.core.package.varManager.Exceptions.VariableError: Read access to uninitialized variable: savein_inbox
+2022-09-08 15:28:33.951 15856 ManagedWorker-4*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 953, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\dataoperations\inboxfetch\TsInboxFetchExec.py", line 103, in Run
+                          File "tts\testExecution\testSteps\dataoperations\inboxfetch\TsInboxFetchExec.py", line 80, in Call
+                          File "tts\core\package\dataStructures\Inbox.py", line 216, in FetchNext
+                        tt._Exceptions_.TTError: Waiting for next message not allowed for disconnected inbox
+2022-09-08 15:28:33.964 15856 ManagedWorker-4*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 953, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\controlflow\ifthenelse\TsIfThenElseExec.py", line 108, in Run
+                          File "tts\core\expressions\BaseExpressions.py", line 852, in Evaluate
+                          File "tts\core\expressions\BaseExpressions.py", line 929, in Evaluate
+                          File "tts\testExecution\engine\Namespace.py", line 113, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 67, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 48, in __varToValue
+                        tts.core.package.varManager.Exceptions.VariableError: Read access to uninitialized variable: savein_inbox
+2022-09-08 15:28:33.975 15856 ManagedWorker-4*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 953, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\dataoperations\inboxfetch\TsInboxFetchExec.py", line 103, in Run
+                          File "tts\testExecution\testSteps\dataoperations\inboxfetch\TsInboxFetchExec.py", line 80, in Call
+                          File "tts\core\package\dataStructures\Inbox.py", line 216, in FetchNext
+                        tt._Exceptions_.TTError: Waiting for next message not allowed for disconnected inbox
+2022-09-08 15:28:33.985 15856 ManagedWorker-4*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 953, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\controlflow\ifthenelse\TsIfThenElseExec.py", line 108, in Run
+                          File "tts\core\expressions\BaseExpressions.py", line 852, in Evaluate
+                          File "tts\core\expressions\BaseExpressions.py", line 929, in Evaluate
+                          File "tts\testExecution\engine\Namespace.py", line 113, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 67, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 48, in __varToValue
+                        tts.core.package.varManager.Exceptions.VariableError: Read access to uninitialized variable: savein_inbox
+2022-09-08 15:28:33.995 15856 ManagedWorker-4*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 953, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\dataoperations\inboxfetch\TsInboxFetchExec.py", line 103, in Run
+                          File "tts\testExecution\testSteps\dataoperations\inboxfetch\TsInboxFetchExec.py", line 80, in Call
+                          File "tts\core\package\dataStructures\Inbox.py", line 216, in FetchNext
+                        tt._Exceptions_.TTError: Waiting for next message not allowed for disconnected inbox
+2022-09-08 15:28:34.005 15856 ManagedWorker-4*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 953, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\controlflow\ifthenelse\TsIfThenElseExec.py", line 108, in Run
+                          File "tts\core\expressions\BaseExpressions.py", line 852, in Evaluate
+                          File "tts\core\expressions\BaseExpressions.py", line 929, in Evaluate
+                          File "tts\testExecution\engine\Namespace.py", line 113, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 67, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 48, in __varToValue
+                        tts.core.package.varManager.Exceptions.VariableError: Read access to uninitialized variable: savein_inbox
+2022-09-08 15:28:34.015 15856 ManagedWorker-4*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 953, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\dataoperations\inboxfetch\TsInboxFetchExec.py", line 103, in Run
+                          File "tts\testExecution\testSteps\dataoperations\inboxfetch\TsInboxFetchExec.py", line 80, in Call
+                          File "tts\core\package\dataStructures\Inbox.py", line 216, in FetchNext
+                        tt._Exceptions_.TTError: Waiting for next message not allowed for disconnected inbox
+2022-09-08 15:28:34.025 15856 ManagedWorker-4*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 953, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\controlflow\ifthenelse\TsIfThenElseExec.py", line 108, in Run
+                          File "tts\core\expressions\BaseExpressions.py", line 852, in Evaluate
+                          File "tts\core\expressions\BaseExpressions.py", line 929, in Evaluate
+                          File "tts\testExecution\engine\Namespace.py", line 113, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 67, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 48, in __varToValue
+                        tts.core.package.varManager.Exceptions.VariableError: Read access to uninitialized variable: savein_inbox
+2022-09-08 15:28:34.033 15856 ManagedWorker-4*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 953, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\dataoperations\inboxfetch\TsInboxFetchExec.py", line 103, in Run
+                          File "tts\testExecution\testSteps\dataoperations\inboxfetch\TsInboxFetchExec.py", line 80, in Call
+                          File "tts\core\package\dataStructures\Inbox.py", line 216, in FetchNext
+                        tt._Exceptions_.TTError: Waiting for next message not allowed for disconnected inbox
+2022-09-08 15:28:34.043 15856 ManagedWorker-4*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 953, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\controlflow\ifthenelse\TsIfThenElseExec.py", line 108, in Run
+                          File "tts\core\expressions\BaseExpressions.py", line 852, in Evaluate
+                          File "tts\core\expressions\BaseExpressions.py", line 929, in Evaluate
+                          File "tts\testExecution\engine\Namespace.py", line 113, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 67, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 48, in __varToValue
+                        tts.core.package.varManager.Exceptions.VariableError: Read access to uninitialized variable: savein_inbox
+2022-09-08 15:28:34.051 15856 ManagedWorker-4*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 953, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\dataoperations\inboxfetch\TsInboxFetchExec.py", line 103, in Run
+                          File "tts\testExecution\testSteps\dataoperations\inboxfetch\TsInboxFetchExec.py", line 80, in Call
+                          File "tts\core\package\dataStructures\Inbox.py", line 216, in FetchNext
+                        tt._Exceptions_.TTError: Waiting for next message not allowed for disconnected inbox
+2022-09-08 15:28:34.061 15856 ManagedWorker-4*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 953, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\controlflow\ifthenelse\TsIfThenElseExec.py", line 108, in Run
+                          File "tts\core\expressions\BaseExpressions.py", line 852, in Evaluate
+                          File "tts\core\expressions\BaseExpressions.py", line 929, in Evaluate
+                          File "tts\testExecution\engine\Namespace.py", line 113, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 67, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 48, in __varToValue
+                        tts.core.package.varManager.Exceptions.VariableError: Read access to uninitialized variable: savein_inbox
+2022-09-08 15:28:34.070 15856 ManagedWorker-4*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 953, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\dataoperations\inboxfetch\TsInboxFetchExec.py", line 103, in Run
+                          File "tts\testExecution\testSteps\dataoperations\inboxfetch\TsInboxFetchExec.py", line 80, in Call
+                          File "tts\core\package\dataStructures\Inbox.py", line 216, in FetchNext
+                        tt._Exceptions_.TTError: Waiting for next message not allowed for disconnected inbox
+2022-09-08 15:28:34.079 15856 ManagedWorker-4*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 953, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\controlflow\ifthenelse\TsIfThenElseExec.py", line 108, in Run
+                          File "tts\core\expressions\BaseExpressions.py", line 852, in Evaluate
+                          File "tts\core\expressions\BaseExpressions.py", line 929, in Evaluate
+                          File "tts\testExecution\engine\Namespace.py", line 113, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 67, in __getitem__
+                          File "tts\core\package\varManager\VariableContainer.py", line 48, in __varToValue
+                        tts.core.package.varManager.Exceptions.VariableError: Read access to uninitialized variable: savein_inbox

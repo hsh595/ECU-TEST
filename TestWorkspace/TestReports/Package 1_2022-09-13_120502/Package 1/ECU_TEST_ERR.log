@@ -1,0 +1,32 @@
+
+
+= 13.09.2022 12:05:02 (UTC +8:00) === ECU-TEST 2021.2.113427+6b6fb661af22 113427+6b6fb661af22 (2021/06/28 11:25:11) (64bit) ===
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2022.4
+         - valid until: 31-dec-2022
+         - licensed for: TURING
+         - Server: 192.168.1.17
+
+
+2022-09-13 12:05:02.782 19220 ManagedWorker-4*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\core\toolingFramework\interface\Proxy.py", line 94, in __call__
+                          File "tts\core\toolingFramework\interface\AbstractAdapter.py", line 739, in __call__
+                          File "tts\core\toolingFramework\interface\portTypes\AbstractPort.py", line 209, in ExecuteJob
+                        TypeError: JobSendFrame() missing 1 required positional argument: 'FrameId'
+2022-09-13 12:05:02.787 19220 ManagedWorker-4*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\testExecution\testSteps\generic\TestStepJobExec.py", line 173, in __Call
+                          File "tts\core\mapping\xa\XAJobExec.py", line 71, in Call
+                          File "tts\core\toolingFramework\interface\Ports.py", line 65, in ExecuteJob
+                          File "tts\core\toolingFramework\interface\Ports.py", line 61, in _CallOnToolIf
+                        tts.core.toolingFramework.toolAccess.Exceptions.ToolError: Port BUS-CAN01 (@local): PortExecuteJob() failed: JobSendFrame() missing 1 required positional argument: 'FrameId'
+2022-09-13 12:05:02.796 19220 ManagedWorker-4*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 953, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\generic\TestStepJobExec.py", line 250, in Run
+                        tt._Exceptions_.TTError: Port BUS-CAN01 (@local): PortExecuteJob() failed: JobSendFrame() missing 1 required positional argument: 'FrameId'

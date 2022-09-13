@@ -1,0 +1,71 @@
+
+
+= 08.09.2022 16:08:15 (UTC +8:00) === ECU-TEST 2021.2.113427+6b6fb661af22 113427+6b6fb661af22 (2021/06/28 11:25:11) (64bit) ===
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2022.4
+         - valid until: 31-dec-2022
+         - licensed for: TURING
+         - Server: 192.168.1.17
+
+
+2022-09-08 16:08:15.204 15856 ManagedWorker-6*PE.Run() INFO:
+                        Start package 'main.pkg' with test case execution with sequential analysis job execution
+2022-09-08 16:08:15.214 15856 ManagedWorker-6*PE.Run() INFO:
+                        Test case "main" started
+2022-09-08 16:08:15.217 15856 ManagedWorker-6*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2022-09-08 16:08:15.231 15856 ManagedWorker-6*PE.Run() INFO:
+                        System time mode activated
+2022-09-08 16:08:15.239 15856 Thread-128*sub ERROR:
+                        Test step .1(sub).8(Calculation): "VariableError: Read access to uninitialized variable: savein_inbox"
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\sub.pkg"#8
+2022-09-08 16:08:15.240 15856 Thread-128*sub ERROR:
+                        tts.testExecution.engine.TestEngine.ExecuteTestStep: VariableError: Read access to uninitialized variable: savein_inbox
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\sub.pkg"#8
+2022-09-08 16:08:35.251 15856 Thread-128*sub ERROR:
+                        Test step .1(sub).8(Calculation): "VariableError: Read access to uninitialized variable: savein_inbox"
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\sub.pkg"#8
+2022-09-08 16:08:35.253 15856 Thread-128*sub ERROR:
+                        tts.testExecution.engine.TestEngine.ExecuteTestStep: VariableError: Read access to uninitialized variable: savein_inbox
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\sub.pkg"#8
+2022-09-08 16:08:55.264 15856 Thread-128*sub ERROR:
+                        Test step .1(sub).8(Calculation): "VariableError: Read access to uninitialized variable: savein_inbox"
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\sub.pkg"#8
+2022-09-08 16:08:55.266 15856 Thread-128*sub ERROR:
+                        tts.testExecution.engine.TestEngine.ExecuteTestStep: VariableError: Read access to uninitialized variable: savein_inbox
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\sub.pkg"#8
+2022-09-08 16:09:15.277 15856 Thread-128*sub ERROR:
+                        Test step .1(sub).8(Calculation): "VariableError: Read access to uninitialized variable: savein_inbox"
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\sub.pkg"#8
+2022-09-08 16:09:15.278 15856 Thread-128*sub ERROR:
+                        tts.testExecution.engine.TestEngine.ExecuteTestStep: VariableError: Read access to uninitialized variable: savein_inbox
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\sub.pkg"#8
+2022-09-08 16:09:35.289 15856 Thread-128*sub ERROR:
+                        Test step .1(sub).8(Calculation): "VariableError: Read access to uninitialized variable: savein_inbox"
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\sub.pkg"#8
+2022-09-08 16:09:35.291 15856 Thread-128*sub ERROR:
+                        tts.testExecution.engine.TestEngine.ExecuteTestStep: VariableError: Read access to uninitialized variable: savein_inbox
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\sub.pkg"#8
+2022-09-08 16:09:55.299 15856 Thread-128*sub ERROR:
+                        Test step .1(sub).8(Calculation): "VariableError: Read access to uninitialized variable: savein_inbox"
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\sub.pkg"#8
+2022-09-08 16:09:55.301 15856 Thread-128*sub ERROR:
+                        tts.testExecution.engine.TestEngine.ExecuteTestStep: VariableError: Read access to uninitialized variable: savein_inbox
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\sub.pkg"#8
+2022-09-08 16:10:05.200 15856 MainThread ERROR:
+                        Manual test termination
+2022-09-08 16:10:15.247 15856 ManagedWorker-6*PE.Run() WARNING:
+                        Wait for end of thread "Thread-128*sub cancelled
+                        Package "C:\0_ET_Workspace\0_ET_Workspace\1_Exercises\1_ECU-TEST_Basic\Packages\main.pkg"#0
+2022-09-08 16:10:15.250 15856 ManagedWorker-6*PE.Run() WARNING:
+                        Wait for end of thread "Thread-128*sub cancelled
+2022-09-08 16:10:15.251 15856 ManagedWorker-6*PE.Run() WARNING:
+                        Test case "main" aborted
+2022-09-08 16:10:15.252 15856 ManagedWorker-6*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2022-09-08 16:10:15.253 15856 ManagedWorker-6*PE.Run() INFO:
+                        Test case "main" completed
