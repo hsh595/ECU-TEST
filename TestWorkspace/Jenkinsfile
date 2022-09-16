@@ -4,12 +4,11 @@ pipeline {
         stage('Excute test package') {
             steps {
                 //Start ET
-                startET toolName:'ECU-TEST',workspaceDir:'C:\\0_ET_Workspace\\0_ET_Workspace\\1_Exercises\\1_ECU-TEST_Basic'
+                startET toolName:'ECU-TEST',workspaceDir:'C:\\0_ET_Workspace\\Git\\ECU-TEST\\TestWorkspace'
                 
                 //Run package
-                testPackage testConfig: [constants: [], forceReload: false, keepConfig: false, loadOnly: false,tbcFile:'C:\\0_ET_Workspace\\0_ET_Workspace\\1_Exercises\\1_ECU-TEST_Basic\\Configurations\\Testlab_HiL.tbc',tcfFile:'C:\\0_ET_Workspace\\0_ET_Workspace\\1_Exercises\\1_ECU-TEST_Basic\\Configurations\\SW_Ver_1.tcf'],testFile:'C:\\0_ET_Workspace\\0_ET_Workspace\\1_Exercises\\1_ECU-TEST_Basic\\Packages\\_Results\\50_TestCaseDevelopment\\BasicDrive.pkg'
+                testPackage testConfig: [constants: [], forceReload: false, keepConfig: false, loadOnly: false,tbcFile:'C:\\0_ET_Workspace\\Git\\ECU-TEST\\TestWorkspace\\Configurations\\Testlab_HiL.tbc',tcfFile:'C:\\0_ET_Workspace\\Git\\ECU-TEST\\TestWorkspace\\Configurations\\SW_Ver_1.tcf'],testFile:'C:\\0_ET_Workspace\\Git\ECU-TEST\\TestWorkspace\\Packages\\_Results\\50_TestCaseDevelopment\\BasicDrive.pkg'
                 
-                //publish unit Report
       
             }
         }
