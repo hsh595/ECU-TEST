@@ -2,10 +2,10 @@ pipeline {
     agent {
         label {
             label 'slave_monitor'
-            retries 4
+            retries 1
         }
     }
-    
+
     stages {
         stage('Excute test package') {
             steps {
