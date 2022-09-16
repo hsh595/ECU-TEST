@@ -2203,7 +2203,7 @@
 			<DVALUE xsi:type="integer">5</DVALUE>
 		</ELEMENT>
 		<ELEMENT dkey="PKG___SELECTION">
-			<DVALUE xsi:type="integer">7</DVALUE>
+			<DVALUE xsi:type="integer">0</DVALUE>
 		</ELEMENT>
 		<ELEMENT dkey="PKG___Test steps">
 			<DVALUE xsi:type="integer">4</DVALUE>
