@@ -6,6 +6,11 @@ pipeline {
         }
     }
 
+    options {
+        //pipeline timeout 30 minutes
+        timeout(30) 
+
+    }
     stages {
         stage('Excute test package') {
             steps {
