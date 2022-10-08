@@ -15,13 +15,13 @@ pipeline {
         stage('Excute test package') {
             steps {
                 //Start ET
-                startET toolName: 'ECU-TEST 2021.2', workspaceDir: 'C:\\0_ET_Workspace\\0_ET_Workspace\\1_Exercises\\1_ECU-TEST_Basic'
+                startET toolName: 'ECU-TEST 2022.2', workspaceDir: 'C:\\0_ET_Workspace\\0_ET_Workspace\\1_Exercises\\1_ECU-TEST_Basic'
                 
                 //Run package
                 testPackage testConfig: [constants: [], forceReload: false, keepConfig: false, loadOnly: false, tbcFile: 'C:\\0_ET_Workspace\\0_ET_Workspace\\1_Exercises\\1_ECU-TEST_Basic\\Configurations\\Testlab_HiL.tbc', tcfFile: 'C:\\0_ET_Workspace\\0_ET_Workspace\\1_Exercises\\1_ECU-TEST_Basic\\Configurations\\SW_Ver_1.tcf'], testFile: 'C:\\0_ET_Workspace\\0_ET_Workspace\\1_Exercises\\1_ECU-TEST_Basic\\Packages\\_Results\\50_TestCaseDevelopment\\BasicDrive.pkg'
 
                 //stop ET
-                stopET 'ECU-TEST 2021.2'
+                stopET 'ECU-TEST 2022.2'
             }
         }
     }
