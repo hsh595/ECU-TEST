@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2024.1.1.147821+33618a0cd21b" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace">
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">sm_mcur_f2/KL_LIN_LDF/EOP_Force_Restart/port1</ID>
+			<XACCESS format-rev="1" xsi:type="xaTraceFileSignal">
+				<SIGNAL-NAME xsi:type="string">sm_mcur_f2/KL_LIN_LDF/EOP_Force_Restart/port1</SIGNAL-NAME>
+			</XACCESS>
+		</MAPPING-ITEM>
+	</MAPPING>
+	<TRACE-RECORDING format-rev="4" xsi:type="recordingManager">
+		<SIGNAL-GROUPS>
+			<ELEMENT format-rev="2" xsi:type="signalGroup">
+				<NAME xsi:type="string">sm_mcur_f2</NAME>
+				<DESCRIPTION xsi:type="string"/>
+				<SIGNALS>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="string">sm_mcur_f2/KL_LIN_LDF/EOP_Force_Restart/port1</MAPPING-REF>
+					</ELEMENT>
+				</SIGNALS>
+			</ELEMENT>
+		</SIGNAL-GROUPS>
+		<RECORDING-GROUP>
+			<ELEMENT format-rev="3" xsi:type="recordingGroup">
+				<NAME xsi:type="string">Recording group for sm_mcur_f2</NAME>
+				<UUID xsi:type="string">b361e4220eae11efb5be4cd577b944d6</UUID>
+				<RECORDINGS>
+					<ELEMENT format-rev="2" xsi:type="recordingInfo">
+						<RECORDING-TYPE xsi:type="string">ZIP_OPALMAT4</RECORDING-TYPE>
+						<PATHS>
+							<PATH xsi:type="fileReference">
+								<PATH xsi:type="string">Utilities/Recording.zip</PATH>
+								<PATH-TYPE xsi:type="string">relTraces</PATH-TYPE>
+							</PATH>
+						</PATHS>
+						<RECORDING-NAME xsi:type="string">Recording</RECORDING-NAME>
+					</ELEMENT>
+				</RECORDINGS>
+				<SIGNAL-GROUP-REF>sm_mcur_f2</SIGNAL-GROUP-REF>
+			</ELEMENT>
+		</RECORDING-GROUP>
+		<SYNCHRONISATION-CONFIG xsi:type="syncConfig"/>
+		<TRACE-MERGE-CONFIG xsi:type="traceMergeConfig">
+			<MODE xsi:type="integer">0</MODE>
+			<PATH format-rev="2" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="string">merged</VALUE>
+			</PATH>
+		</TRACE-MERGE-CONFIG>
+	</TRACE-RECORDING>
+	<TRACE-ANALYSES format-rev="1" xsi:type="traceAnalyses">
+		<TRACE-ANALYSIS format-rev="3" uuid="b59caa460eae11ef97864cd577b944d6" xsi:type="traceAnalysis">
+			<NAME xsi:type="string">Trace analysis 1</NAME>
+			<ANALYSISITEM format-rev="1" uuid="b59caa470eae11ef98334cd577b944d6" xsi:type="episode">
+				<NAME xsi:type="string">New episode</NAME>
+				<ANALYSISITEM format-rev="4" uuid="b675e4870eae11ef82384cd577b944d6" xsi:type="plotItem">
+					<NAME xsi:type="string">Plot</NAME>
+					<SUB-PLOTS>
+						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<TYPE xsi:type="string">common</TYPE>
+							<ENTITIES>
+								<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+									<NAME xsi:type="string">sm_mcur_f2_KL_LIN_LDF_EOP_Force_Restart_port1</NAME>
+									<AXIS xsi:type="integer">0</AXIS>
+								</ENTITY>
+							</ENTITIES>
+							<AXES>
+								<AXIS xsi:type="plotAxis"/>
+							</AXES>
+						</SUB-PLOT>
+						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<TYPE xsi:type="string">separate</TYPE>
+							<ENTITIES/>
+							<AXES>
+								<AXIS xsi:type="plotAxis"/>
+							</AXES>
+						</SUB-PLOT>
+						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<TYPE xsi:type="string">common</TYPE>
+							<ENTITIES/>
+							<AXES>
+								<AXIS xsi:type="plotAxis"/>
+							</AXES>
+						</SUB-PLOT>
+					</SUB-PLOTS>
+					<UNUSED-SIGNALS/>
+					<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+						<CONDITION xsi:type="string">NONE</CONDITION>
+						<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</MAX-NUMBER>
+						<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-LEFT>
+						<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-RIGHT>
+					</SUB-CONFIG-OVERVIEW>
+					<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+						<CONDITION xsi:type="string">NEVER</CONDITION>
+						<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</MAX-NUMBER>
+						<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-LEFT>
+						<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-RIGHT>
+					</SUB-CONFIG-PARENT-CONTEXT>
+					<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+						<CONDITION xsi:type="string">NEVER</CONDITION>
+						<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</MAX-NUMBER>
+						<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-LEFT>
+						<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-RIGHT>
+					</SUB-CONFIG-DETAILS>
+					<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+					<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+				</ANALYSISITEM>
+			</ANALYSISITEM>
+			<VIRTUAL-SIGNALS-MANAGER xsi:type="virtualSignalsManager">
+				<VIRTUAL-SIGNALS>
+					<VIRTUAL-SIGNAL uuid="b6a0bb580eae11efb6ab4cd577b944d6" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="string">sm_mcur_f2_KL_LIN_LDF_EOP_Force_Restart_port1</NAME>
+						<SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<KEY xsi:type="string">sm_mcur_f2/KL_LIN_LDF/EOP_Force_Restart/port1</KEY>
+							<SOURCE-TYPE xsi:type="string">RECORDING-GROUP</SOURCE-TYPE>
+							<SOURCE-REF xsi:type="string">b361e4220eae11efb5be4cd577b944d6</SOURCE-REF>
+						</SIGNAL-FOR-ANALYSIS>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+				</VIRTUAL-SIGNALS>
+			</VIRTUAL-SIGNALS-MANAGER>
+		</TRACE-ANALYSIS>
+	</TRACE-ANALYSES>
+</PACKAGE>
