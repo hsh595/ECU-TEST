@@ -1,6 +1,0 @@
-<?xml version="1.0" ?>
-<testsuites disabled="0" errors="0" failures="0" tests="1" time="26.25446891784668">
-	<testsuite disabled="0" errors="0" failures="0" name="BasicDrive" skipped="0" tests="1" time="26.25446891784668">
-		<testcase name="BasicDrive" time="26.254469"/>
-	</testsuite>
-</testsuites>

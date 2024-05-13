@@ -1,8 +1,0 @@
-<?xml version="1.0" ?>
-<testsuites disabled="0" errors="1" failures="0" tests="1" time="17.763261556625366">
-	<testsuite disabled="0" errors="1" failures="0" name="BasicDrive" skipped="0" tests="1" time="17.763261556625366">
-		<testcase name="BasicDrive" time="17.763262">
-			<error message="ERROR" type="error">ERROR: UTILITY</error>
-		</testcase>
-	</testsuite>
-</testsuites>
