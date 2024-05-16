@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ANALYSIS-PACKAGE prog-version="2024.1.0.147701+5773b28903a4" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test analysisPackage.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace">
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">BATTERY_UNIT/CELLS/CELLS/CELL1</ID>
+			<XACCESS xsi:type="xaReadWriteValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+			</XACCESS>
+		</MAPPING-ITEM>
+	</MAPPING>
+	<RUN-CONFIG xsi:type="taRunConfig">
+		<RECORDINGS>
+			<RECORDING xsi:type="jobRecording">
+				<NAME xsi:type="string"/>
+				<UUID xsi:type="string">f94c9be2475c46fcb76bf798feec0c9f</UUID>
+				<DESCRIPTION xsi:type="string"/>
+				<RECORDING-INFO format-rev="2" xsi:type="recordingInfo">
+					<RECORDING-TYPE xsi:type="string">CSV</RECORDING-TYPE>
+					<PATHS>
+						<PATH xsi:type="fileReference">
+							<PATH xsi:type="string">TestReports/Package 2_2024-04-11_155914/Package 2/Recording.csv</PATH>
+							<PATH-TYPE xsi:type="string">relTraces</PATH-TYPE>
+						</PATH>
+					</PATHS>
+					<RECORDING-NAME xsi:type="string">default</RECORDING-NAME>
+					<FORMAT-DETAILS xsi:type="string">columnSeparator: ';', decimalSeparator: '.', thousandSeparator: ',', headLineNumber: '0', timeColumn: '0'</FORMAT-DETAILS>
+				</RECORDING-INFO>
+				<MAPPING-NAMES>
+					<MAPPING-NAME xsi:type="string">BATTERY_UNIT/CELLS/CELLS/CELL1</MAPPING-NAME>
+				</MAPPING-NAMES>
+			</RECORDING>
+		</RECORDINGS>
+	</RUN-CONFIG>
+	<TRACE-ANALYSIS format-rev="3" uuid="f653bb02f7d811eeaa014cd577b944d6" xsi:type="traceAnalysis">
+		<NAME xsi:type="string">Trace analysis 1</NAME>
+		<ANALYSISITEM format-rev="1" uuid="f653bb03f7d811eea69a4cd577b944d6" xsi:type="episode">
+			<NAME xsi:type="string">New episode</NAME>
+			<ANALYSISITEM format-rev="4" uuid="5bf2caccf7d911eeab524cd577b944d6" xsi:type="plotItem">
+				<NAME xsi:type="string">Plot</NAME>
+				<SUB-PLOTS>
+					<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+						<TYPE xsi:type="string">common</TYPE>
+						<ENTITIES>
+							<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+								<NAME xsi:type="string">BATTERY_UNIT_CELLS_CELLS_CELL1</NAME>
+								<AXIS xsi:type="integer">0</AXIS>
+							</ENTITY>
+							<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+								<NAME xsi:type="string">EPT_CAN_CELLS_CELLS</NAME>
+								<AXIS xsi:type="integer">0</AXIS>
+							</ENTITY>
+						</ENTITIES>
+						<AXES>
+							<AXIS xsi:type="plotAxis"/>
+						</AXES>
+					</SUB-PLOT>
+					<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+						<TYPE xsi:type="string">separate</TYPE>
+						<ENTITIES/>
+						<AXES/>
+					</SUB-PLOT>
+					<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+						<TYPE xsi:type="string">common</TYPE>
+						<ENTITIES/>
+						<AXES/>
+					</SUB-PLOT>
+				</SUB-PLOTS>
+				<UNUSED-SIGNALS/>
+				<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+					<CONDITION xsi:type="string">NONE</CONDITION>
+					<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">5</VALUE>
+					</MAX-NUMBER>
+					<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">0.5</VALUE>
+					</EXPAND-XLIMITS-LEFT>
+					<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">0.5</VALUE>
+					</EXPAND-XLIMITS-RIGHT>
+				</SUB-CONFIG-OVERVIEW>
+				<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+					<CONDITION xsi:type="string">NEVER</CONDITION>
+					<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">5</VALUE>
+					</MAX-NUMBER>
+					<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">0.5</VALUE>
+					</EXPAND-XLIMITS-LEFT>
+					<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">0.5</VALUE>
+					</EXPAND-XLIMITS-RIGHT>
+				</SUB-CONFIG-PARENT-CONTEXT>
+				<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+					<CONDITION xsi:type="string">NEVER</CONDITION>
+					<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">5</VALUE>
+					</MAX-NUMBER>
+					<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">0.5</VALUE>
+					</EXPAND-XLIMITS-LEFT>
+					<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">0.5</VALUE>
+					</EXPAND-XLIMITS-RIGHT>
+				</SUB-CONFIG-DETAILS>
+				<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+				<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+			</ANALYSISITEM>
+			<ANALYSISITEM format-rev="4" uuid="18d48e0ef7da11ee91804cd577b944d6" xsi:type="plotItem">
+				<NAME xsi:type="string">Plot</NAME>
+				<SUB-PLOTS>
+					<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+						<TYPE xsi:type="string">common</TYPE>
+						<ENTITIES>
+							<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+								<NAME xsi:type="string">BATTERY_UNIT_CELLS_CELLS_CELL1</NAME>
+								<AXIS xsi:type="integer">0</AXIS>
+							</ENTITY>
+						</ENTITIES>
+						<AXES>
+							<AXIS xsi:type="plotAxis"/>
+						</AXES>
+					</SUB-PLOT>
+					<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+						<TYPE xsi:type="string">separate</TYPE>
+						<ENTITIES/>
+						<AXES/>
+					</SUB-PLOT>
+					<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+						<TYPE xsi:type="string">common</TYPE>
+						<ENTITIES/>
+						<AXES/>
+					</SUB-PLOT>
+				</SUB-PLOTS>
+				<UNUSED-SIGNALS/>
+				<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+					<CONDITION xsi:type="string">NONE</CONDITION>
+					<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">5</VALUE>
+					</MAX-NUMBER>
+					<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">0.5</VALUE>
+					</EXPAND-XLIMITS-LEFT>
+					<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">0.5</VALUE>
+					</EXPAND-XLIMITS-RIGHT>
+				</SUB-CONFIG-OVERVIEW>
+				<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+					<CONDITION xsi:type="string">NEVER</CONDITION>
+					<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">5</VALUE>
+					</MAX-NUMBER>
+					<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">0.5</VALUE>
+					</EXPAND-XLIMITS-LEFT>
+					<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">0.5</VALUE>
+					</EXPAND-XLIMITS-RIGHT>
+				</SUB-CONFIG-PARENT-CONTEXT>
+				<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+					<CONDITION xsi:type="string">NEVER</CONDITION>
+					<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">5</VALUE>
+					</MAX-NUMBER>
+					<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">0.5</VALUE>
+					</EXPAND-XLIMITS-LEFT>
+					<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">0.5</VALUE>
+					</EXPAND-XLIMITS-RIGHT>
+				</SUB-CONFIG-DETAILS>
+				<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+				<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+			</ANALYSISITEM>
+			<ANALYSISITEM format-rev="4" uuid="3e0c20b1f7da11ee8d934cd577b944d6" xsi:type="plotItem">
+				<NAME xsi:type="string">Plot</NAME>
+				<SUB-PLOTS>
+					<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+						<TYPE xsi:type="string">common</TYPE>
+						<ENTITIES>
+							<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+								<NAME xsi:type="string">BATTERY_UNIT_CELLS_CELLS_CELL1</NAME>
+								<AXIS xsi:type="integer">0</AXIS>
+							</ENTITY>
+						</ENTITIES>
+						<AXES>
+							<AXIS xsi:type="plotAxis"/>
+						</AXES>
+					</SUB-PLOT>
+					<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+						<TYPE xsi:type="string">separate</TYPE>
+						<ENTITIES/>
+						<AXES/>
+					</SUB-PLOT>
+					<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+						<TYPE xsi:type="string">common</TYPE>
+						<ENTITIES/>
+						<AXES/>
+					</SUB-PLOT>
+				</SUB-PLOTS>
+				<UNUSED-SIGNALS/>
+				<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+					<CONDITION xsi:type="string">NONE</CONDITION>
+					<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">5</VALUE>
+					</MAX-NUMBER>
+					<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">0.5</VALUE>
+					</EXPAND-XLIMITS-LEFT>
+					<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">0.5</VALUE>
+					</EXPAND-XLIMITS-RIGHT>
+				</SUB-CONFIG-OVERVIEW>
+				<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+					<CONDITION xsi:type="string">NEVER</CONDITION>
+					<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">5</VALUE>
+					</MAX-NUMBER>
+					<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">0.5</VALUE>
+					</EXPAND-XLIMITS-LEFT>
+					<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">0.5</VALUE>
+					</EXPAND-XLIMITS-RIGHT>
+				</SUB-CONFIG-PARENT-CONTEXT>
+				<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+					<CONDITION xsi:type="string">NEVER</CONDITION>
+					<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">5</VALUE>
+					</MAX-NUMBER>
+					<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">0.5</VALUE>
+					</EXPAND-XLIMITS-LEFT>
+					<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">0.5</VALUE>
+					</EXPAND-XLIMITS-RIGHT>
+				</SUB-CONFIG-DETAILS>
+				<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+				<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+			</ANALYSISITEM>
+			<ANALYSISITEM format-rev="4" uuid="194be9ccf86811ee8c074cd577b944d6" xsi:type="plotItem">
+				<NAME xsi:type="string">Plot</NAME>
+				<SUB-PLOTS>
+					<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+						<TYPE xsi:type="string">common</TYPE>
+						<ENTITIES>
+							<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+								<NAME xsi:type="string">BATTERY_UNIT_CELLS_CELLS_CELL1</NAME>
+								<AXIS xsi:type="integer">0</AXIS>
+							</ENTITY>
+						</ENTITIES>
+						<AXES>
+							<AXIS xsi:type="plotAxis"/>
+						</AXES>
+					</SUB-PLOT>
+					<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+						<TYPE xsi:type="string">separate</TYPE>
+						<ENTITIES/>
+						<AXES/>
+					</SUB-PLOT>
+					<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+						<TYPE xsi:type="string">common</TYPE>
+						<ENTITIES/>
+						<AXES/>
+					</SUB-PLOT>
+				</SUB-PLOTS>
+				<UNUSED-SIGNALS/>
+				<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+					<CONDITION xsi:type="string">NONE</CONDITION>
+					<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">5</VALUE>
+					</MAX-NUMBER>
+					<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">0.5</VALUE>
+					</EXPAND-XLIMITS-LEFT>
+					<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">0.5</VALUE>
+					</EXPAND-XLIMITS-RIGHT>
+				</SUB-CONFIG-OVERVIEW>
+				<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+					<CONDITION xsi:type="string">NEVER</CONDITION>
+					<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">5</VALUE>
+					</MAX-NUMBER>
+					<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">0.5</VALUE>
+					</EXPAND-XLIMITS-LEFT>
+					<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">0.5</VALUE>
+					</EXPAND-XLIMITS-RIGHT>
+				</SUB-CONFIG-PARENT-CONTEXT>
+				<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+					<CONDITION xsi:type="string">NEVER</CONDITION>
+					<MAX-NUMBER format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">5</VALUE>
+					</MAX-NUMBER>
+					<EXPAND-XLIMITS-LEFT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">0.5</VALUE>
+					</EXPAND-XLIMITS-LEFT>
+					<EXPAND-XLIMITS-RIGHT format-rev="2" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="float">0.5</VALUE>
+					</EXPAND-XLIMITS-RIGHT>
+				</SUB-CONFIG-DETAILS>
+				<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+				<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+			</ANALYSISITEM>
+		</ANALYSISITEM>
+		<VIRTUAL-SIGNALS-MANAGER xsi:type="virtualSignalsManager">
+			<VIRTUAL-SIGNALS>
+				<VIRTUAL-SIGNAL uuid="fa5c6bf6f7d811eeb61b4cd577b944d6" xsi:type="virtualSessionSignal">
+					<NAME xsi:type="string">BATTERY_UNIT_CELLS_CELLS_CELL1</NAME>
+					<MAPPING-NAME xsi:type="string">BATTERY_UNIT/CELLS/CELLS/CELL1</MAPPING-NAME>
+					<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+				</VIRTUAL-SIGNAL>
+			</VIRTUAL-SIGNALS>
+		</VIRTUAL-SIGNALS-MANAGER>
+	</TRACE-ANALYSIS>
+</ANALYSIS-PACKAGE>
